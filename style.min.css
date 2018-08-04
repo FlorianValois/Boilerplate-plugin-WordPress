@@ -1,0 +1,14 @@
+body  { /* 
+Lien plugin dans la barre de navigation
+*/ /* 
+Page du plugin
+*/ }
+body.swal2-height-auto  { height: 100% !important; }
+body #adminmenu #toplevel_page_ajax-submit a { color: #688017; }
+body #adminmenu #toplevel_page_ajax-submit a.menu-top { background: #bfeb2b; }
+body #adminmenu .wp-menu-image img { width: auto; height: 20px; }
+body.toplevel_page_ajax-submit  { background: #ffffff; }
+body.toplevel_page_ajax-submit #adminmenu #toplevel_page_ajax-submit a.menu-top { background: #bfeb2b; }
+body.toplevel_page_ajax-submit #adminmenu #toplevel_page_ajax-submit a.current::after { border-right-color: #ffffff !important; }
+
+/*# sourceMappingURL=style.min.css.map */
