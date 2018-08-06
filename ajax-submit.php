@@ -60,6 +60,7 @@ function your_ajax_callback_function_name(){
   // Récupération des données du form
   $params = array();
     
+  // Mise en place des datas dans le tableau
   parse_str($_POST['data'], $params);
   
   // Sauvegarde des données
