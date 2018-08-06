@@ -1,22 +1,26 @@
 $pluginName: 'ajax-submit';
-body
-/* 
+body{
+  /* 
   Paramétrage Sweet Alert 2
   */
-
-{
   &.swal2-height-auto {
-    height: 100%!important;
+    height: 100% !important;
   }
+  
   /* 
   Lien plugin dans la barre de navigation
   */
   #adminmenu {
     #toplevel_page_#{$pluginName} {
       a {
-        color: #688017;
+        color: darken(#ffc62c, 35%);
         &.menu-top {
-          background: #bfeb2b;
+          background: #ffc62c;
+        }
+        &.current {
+          &::after {
+            border-right-color: #ffffff !important;
+          }
         }
       }
     }
@@ -32,22 +36,13 @@ body
   */
   &.toplevel_page_#{$pluginName} {
     background: #ffffff;
-    #adminmenu {
-      #toplevel_page_#{$pluginName} {
-        a {
-          &.menu-top {
-            background: #bfeb2b;
-          }
-          &.current {
-            &::after {
-              border-right-color: #ffffff!important;
-            }
-          }
-        }
-      }
-    }
     #wpwrap {
       
     }
   }
+}
+
+#rangValue {
+  color: #ffa700;
+  font-weight: bold;
 }

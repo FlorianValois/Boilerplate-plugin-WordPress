@@ -20,6 +20,26 @@
   
   <br><br>
   
+  <input type="range" list="tickmarks" name="range" id="range" value="<?php echo $data['range']; ?>">
+  
+  <span id="rangValue"><?php echo $data['range']; ?></span>
+  
+  <datalist id="tickmarks">
+    <option value="0" label="0%">
+    <option value="10">
+    <option value="20">
+    <option value="30">
+    <option value="40">
+    <option value="50" label="50%">
+    <option value="60">
+    <option value="70">
+    <option value="80">
+    <option value="90">
+    <option value="100" label="100%">
+  </datalist>
+  
+  <br><br>
+  
   <input type="text" name="color1" id="color1" class="color-field" value="<?php echo $data['color1']; ?>">
   
   <br><br>
@@ -57,6 +77,10 @@
   <input type="radio" name="gender" value="male" <?php (isset($data['gender']) === 'male' ? 'checked="checked"' : '');?>> Male<br>
   <input type="radio" name="gender" value="female" <?php (isset($data['gender']) === 'female' ? 'checked="checked"' : '');?>> Female<br>
   <input type="radio" name="gender" value="other" <?php (isset($data['gender']) === 'other' ? 'checked="checked"' : '');?>> Other 
+  
+  <br><br>
+  
+  <textarea name="text_widget" id="" cols="100" rows="6"><?php echo $data['text_widget']; ?></textarea>
   
   <br><br>
   

@@ -6,14 +6,21 @@ jQuery(document).ready(function ($) {
   /* Color Picker WordPress */
   $('.color-field').wpColorPicker();
 
+  $('#range').on('input', function (e) {
+    $('#rangValue').html($('#range').val());
+  });
+
+
   /* Enregistrement des options en Ajax */
   $('#formAjax').on('submit', function (e) {
     e.preventDefault();
+
     var postData = {
       action: 'wpa_49691',
-      data: $(this).serialize(),
+      data: $(this).serialize()
     }
-    console.log(postData);
+
+
     $.ajax({
       type: "POST",
       data: postData,
@@ -45,10 +52,10 @@ jQuery(document).ready(function ($) {
   /* Upload des fichier images */
   $('.upload-image-btn').on('click', function (e) {
     e.preventDefault();
-    
+
     var $image = $(this).siblings('.image-preview');
     var $input = $(this).siblings('.image-url');
-    
+
     var image = wp.media({
         title: 'Choisir une image',
         button: {
@@ -64,10 +71,10 @@ jQuery(document).ready(function ($) {
         $image.attr('src', image_url);
       });
   });
-  
+
   $('.image-url').keyup(function () {
     var $image = $(this).siblings('.image-preview');
     $image.attr('src', $(this).val());
   });
-  
+
 });
