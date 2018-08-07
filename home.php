@@ -1,5 +1,5 @@
 <?php
-  $data = get_option('myhack_extraction_length');
+  $data = get_option('boilerplate_plugin');
 ?>
 
 <div class="wrap">

@@ -65,12 +65,21 @@ function ajax_form_update_options(){
   parse_str($_POST['data'], $params);
   
   // Sauvegarde des données
-  $option_name = 'myhack_extraction_length' ;
+  $option_name = 'boilerplate_plugin' ;
   //$new_value = json_encode( $params );  
   
-  echo json_encode(array(
-    'update' => update_option( $option_name, $params )
-  ));
+  var_dump($params);
+  
+  if($params != null){
+    echo json_encode(array(
+      'update' => update_option( $option_name, $params )
+    ));
+  }
+  else{
+    echo json_encode(array(
+      'update' => delete_option( $option_name )
+    ));
+  }
   
   die(); 
 
