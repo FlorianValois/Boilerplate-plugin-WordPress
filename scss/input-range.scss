@@ -34,9 +34,6 @@ input[type="range"]::-moz-range-track {
 
 input[type="range"]::-ms-track {
   @include inputRangeTrack();
-}
-
-input[type="range"]::-ms-track {
   background: transparent;
   border: none;
   color: transparent;

@@ -58,6 +58,26 @@
   
   <br><br>
    
+  Select : <br>
+  <select name="select" id="select">
+    <?php
+    $arraySelect = array(
+      'value1' => 'Value 1',
+      'value2' => 'Value 2',
+    );
+    ?>
+    <option value=""></option>
+    <?php
+    foreach($arraySelect as $key=>$value){
+      ?>
+      <option value="<?php echo $key; ?>" <?php if($key === $data['select']){ echo 'selected';} ?>><?php echo $value; ?></option>
+      <?php
+    }
+    ?>
+  </select>
+  
+  <br><br>
+   
   Textarea : <br>
   <textarea name="text_widget" id="" cols="100" rows="6"><?php echo $data['text_widget']; ?></textarea>
   
@@ -68,4 +88,3 @@
 </form>
 
 </div>
-
