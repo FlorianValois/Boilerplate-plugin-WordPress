@@ -33,6 +33,7 @@ function import_style_script() {
   
   /* Color Picker WordPress*/
   wp_enqueue_style('wp-color-picker');
+  wp_enqueue_script( 'wp-color-picker-alpha', $pluginDirectory.'/js/wp-color-picker-alpha.js', array( 'wp-color-picker' ), '1.2.2', $in_footer );
   
   wp_enqueue_media();
   

@@ -4,7 +4,7 @@
 
 jQuery(document).ready(function ($) {
   /* Color Picker WordPress */
-  $('.color-field').wpColorPicker();
+  $('.color-picker').wpColorPicker();
 
   /* Value dynamique de l'input range */
   $('.range').on('input', function (e) {

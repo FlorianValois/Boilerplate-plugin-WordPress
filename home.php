@@ -22,7 +22,7 @@
   <br><br>
   
   Input (Color) :<br>
-  <input type="text" name="color1" id="color1" class="color-field" value="<?php echo $data['color1']; ?>">
+  <input type="text" name="color1" id="color1" class="color-picker" data-alpha="true" value="<?php echo $data['color1']; ?>">
   
   <br><br>
   
