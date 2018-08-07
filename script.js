@@ -6,10 +6,12 @@ jQuery(document).ready(function ($) {
   /* Color Picker WordPress */
   $('.color-field').wpColorPicker();
 
-  $('#range').on('input', function (e) {
-    $('#rangValue').html($('#range').val());
+  /* Value dynamique de l'input range */
+  $('.range').on('input', function (e) {
+    $(this).find('span').html($(this).find('input').val());
   });
 
+  /* Suppression des values vides pour l'enregistrement */
   function getFormData($form, no_empty) {
     var formData = $('#formAjax').serializeArray();
     var formData_array = {};
@@ -23,9 +25,7 @@ jQuery(document).ready(function ($) {
         if ($.trim(value) === "") delete formData_array[key];
       });
     }
-    
     return formData_array;
-    
   }
 
   /* Enregistrement des options en Ajax */
@@ -34,11 +34,8 @@ jQuery(document).ready(function ($) {
     var json = $.param(getFormData($('#formAjax'), true));
     var postData = {
       action: 'wpa_49691',
-//      data: $(this).serialize()
       data: json
     }
-
-
     $.ajax({
       type: "POST",
       data: postData,
@@ -89,7 +86,8 @@ jQuery(document).ready(function ($) {
         $image.attr('src', image_url);
       });
   });
-
+  
+  /* Rafraichissement automatique de l'aperçu image */
   $('.image-url').keyup(function () {
     var $image = $(this).siblings('.image-preview');
     $image.attr('src', $(this).val());

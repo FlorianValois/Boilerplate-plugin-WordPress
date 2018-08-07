@@ -20,9 +20,17 @@
   
   <br><br>
   
-  <input type="range" list="tickmarks" name="range" id="range" value="<?php echo $data['range']; ?>">
+  <div class="range">
+    <input type="range" list="tickmarks" name="range_1" id="range" value="<?php echo $data['range_1']; ?>">
+    <span><?php echo $data['range_1']; ?></span>
+  </div>
   
-  <span id="rangValue"><?php echo $data['range']; ?></span>
+  <br><br>
+  
+  <div class="range">
+    <input type="range" list="tickmarks" name="range_2" id="range" value="<?php echo $data['range_2']; ?>">
+    <span><?php echo $data['range_2']; ?></span>
+  </div>
   
   <datalist id="tickmarks">
     <option value="0" label="0%">
