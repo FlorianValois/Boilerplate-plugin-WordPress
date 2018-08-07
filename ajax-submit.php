@@ -13,7 +13,7 @@ Version: 0.1
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
-  add_menu_page('Ajax Submit', 'Ajax Submit', 'manage_options', 'ajax-submit', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
+  add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'ajax-submit', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
 //  add_menu_page('Ajax Submit', 'Ajax Submit', 'manage_options', 'ajax-submit', 'init_AjaxSubmit', '', 99 );
 }
 

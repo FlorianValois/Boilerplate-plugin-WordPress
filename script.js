@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
 
     if (no_empty) {
       $.each(formData_array, function (key, value) {
-        if ($.trim(value) === "") delete formData_array[key];
+        if ($.trim(value) === "" || $.trim(value) === "0") delete formData_array[key];
       });
     }
     return formData_array;
