@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
         $image.attr('src', image_url);
       });
   });
-  
+
   /* Rafraichissement automatique de l'aperçu image */
   $('.image-url').keyup(function () {
     var $image = $(this).siblings('.image-preview');

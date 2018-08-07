@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Ajax submit
+Plugin Name: Boilerplate plugin
 Plugin URI: https://florian-valois.com/
 Description: A save page plugin
 Author: Florian Valois
@@ -14,7 +14,6 @@ add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
   add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
-//  add_menu_page('Ajax Submit', 'Ajax Submit', 'manage_options', 'boilerplate-plugin', 'init_AjaxSubmit', '', 99 );
 }
 
 add_action( 'admin_init', 'stop_heartbeat', 1 );
@@ -68,16 +67,16 @@ function ajax_form_update_options(){
   $option_name = 'boilerplate_plugin' ;
   //$new_value = json_encode( $params );  
   
-  var_dump($params);
-  
-  if($params != null){
+//  var_dump($_POST['data']);
+    
+  if($_POST['data']){
     echo json_encode(array(
       'update' => update_option( $option_name, $params )
     ));
   }
   else{
     echo json_encode(array(
-      'update' => delete_option( $option_name )
+      'delete' => delete_option( $option_name )
     ));
   }
   
