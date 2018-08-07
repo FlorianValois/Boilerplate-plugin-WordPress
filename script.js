@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
     var formData_array = {};
 
     $.each(formData, function (i, item) {
-      console.log(formData_array[item['name']] = item['value']);
+      formData_array[item['name']] = item['value'];
     });
 
     if (no_empty) {
@@ -31,11 +31,7 @@ jQuery(document).ready(function ($) {
   /* Enregistrement des options en Ajax */
   $('#formAjax').on('submit', function (e) {
     e.preventDefault();
-
-    var json = getFormData($(this), true);
-    console.log(json);
-    console.log($(this).serialize());
-
+    var json = $.param(getFormData($('#formAjax'), true));
     var postData = {
       action: 'wpa_49691',
 //      data: $(this).serialize()
