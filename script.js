@@ -10,14 +10,37 @@ jQuery(document).ready(function ($) {
     $('#rangValue').html($('#range').val());
   });
 
+  function getFormData($form, no_empty) {
+    var formData = $('#formAjax').serializeArray();
+    var formData_array = {};
+
+    $.each(formData, function (i, item) {
+      console.log(formData_array[item['name']] = item['value']);
+    });
+
+    if (no_empty) {
+      $.each(formData_array, function (key, value) {
+        if ($.trim(value) === "") delete formData_array[key];
+      });
+    }
+    
+    return formData_array;
+    
+
+  }
 
   /* Enregistrement des options en Ajax */
   $('#formAjax').on('submit', function (e) {
     e.preventDefault();
 
+    var json = getFormData($(this), true);
+    console.log(json);
+    console.log($(this).serialize());
+
     var postData = {
       action: 'wpa_49691',
-      data: $(this).serialize()
+//      data: $(this).serialize()
+      data: json
     }
 
 
