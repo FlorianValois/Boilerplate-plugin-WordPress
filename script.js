@@ -26,7 +26,6 @@ jQuery(document).ready(function ($) {
     
     return formData_array;
     
-
   }
 
   /* Enregistrement des options en Ajax */
