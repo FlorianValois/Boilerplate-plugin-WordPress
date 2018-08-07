@@ -18,6 +18,11 @@
   
   <br><br>
   
+  Input (Time) :<br>
+  <input type="time" name="time" id="time" value="<?php echo $data['time']; ?>">
+  
+  <br><br>
+  
   Input (Range) :<br>
   <div class="range">
     <input type="range" list="tickmarks" name="range_1" id="range" value="<?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?>" min="0" max="100">
