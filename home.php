@@ -13,10 +13,15 @@
   
   <br><br>
   
+  Input (Date) :<br>
+  <input type="date" name="date" id="date" value="<?php echo $data['date']; ?>">
+  
+  <br><br>
+  
   Input (Range) :<br>
   <div class="range">
-    <input type="range" list="tickmarks" name="range_1" id="range" value="<?php echo $data['range_1']; ?>" min="0" max="100">
-    <span><?php echo $data['range_1']; ?></span>
+    <input type="range" list="tickmarks" name="range_1" id="range" value="<?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?>" min="0" max="100">
+    <span><?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?></span>
   </div>
   
   <br><br>
@@ -26,15 +31,6 @@
   
   <br><br>
   
-  Upload image :<br>
-  <div class="upload-image">
-    <img src="<?php echo $data['image_url_1']; ?>" class="image-preview" style="width: 150px; height: auto;">
-    <input type="text" name="image_url_1" class="image-url" value="<?php echo $data['image_url_1']; ?>" style="display: block; width: 100%;">
-    <button type="button" name="upload-btn" id="upload-btn-2" class="upload-image-btn button-secondary">Choisir une image</button>
-  </div>
-  
-  <br><br>
-   
   Input (Checkbox) :<br>
   <input id="checkbox_1" type="checkbox" name="checkbox_1" value="checkbox_1_value" <?php (isset($data['checkbox_1']) ? 'checked' : ''); ?>>
   <label for="checkbox_1">Checkbox 1</label>
@@ -48,6 +44,15 @@
   
   <br><br>
   
+  Upload image :<br>
+  <div class="upload-image">
+    <img src="<?php echo $data['image_url_1']; ?>" class="image-preview" style="width: 150px; height: auto;">
+    <input type="text" name="image_url_1" class="image-url" value="<?php echo $data['image_url_1']; ?>" style="display: block; width: 100%;">
+    <button type="button" name="upload-btn" id="upload-btn-2" class="upload-image-btn button-secondary">Choisir une image</button>
+  </div>
+  
+  <br><br>
+   
   Textarea : <br>
   <textarea name="text_widget" id="" cols="100" rows="6"><?php echo $data['text_widget']; ?></textarea>
   

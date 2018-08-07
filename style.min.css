@@ -7,11 +7,11 @@ Lien plugin dans la barre de navigation
 Page du plugin
 */ }
 body.swal2-height-auto { height: 100% !important; }
-body #adminmenu #toplevel_page_ajax-submit a { color: #795800; }
-body #adminmenu #toplevel_page_ajax-submit a.menu-top { background: #ffc62c; }
-body #adminmenu #toplevel_page_ajax-submit a.current::after { border-right-color: #ffffff !important; }
+body #adminmenu #toplevel_page_boilerplate-plugin a { color: #795800; }
+body #adminmenu #toplevel_page_boilerplate-plugin a.menu-top { background: #ffc62c; }
+body #adminmenu #toplevel_page_boilerplate-plugin a.current::after { border-right-color: #ffffff !important; }
 body #adminmenu .wp-menu-image img { width: auto; height: 20px; }
-body.toplevel_page_ajax-submit { background: #ffffff; }
+body.toplevel_page_boilerplate-plugin { background: #ffffff; }
 
 #rangValue { color: #ffa700; font-weight: bold; }
 

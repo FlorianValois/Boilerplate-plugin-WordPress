@@ -5,7 +5,7 @@ Plugin URI: https://florian-valois.com/
 Description: A save page plugin
 Author: Florian Valois
 Author URI: https://florian-valois.com/
-Text Domain: ajax-submit
+Text Domain: boilerplate-plugin
 Domain Path: /languages/
 Version: 0.1
 */
@@ -13,8 +13,8 @@ Version: 0.1
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
-  add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'ajax-submit', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
-//  add_menu_page('Ajax Submit', 'Ajax Submit', 'manage_options', 'ajax-submit', 'init_AjaxSubmit', '', 99 );
+  add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
+//  add_menu_page('Ajax Submit', 'Ajax Submit', 'manage_options', 'boilerplate-plugin', 'init_AjaxSubmit', '', 99 );
 }
 
 add_action( 'admin_init', 'stop_heartbeat', 1 );
@@ -45,7 +45,7 @@ function import_style_script() {
       ) 
   ); 
   
-  wp_enqueue_style( 'ajax-submit-css', $pluginDirectory.'/style.min.css' );
+  wp_enqueue_style( 'boilerplate-plugin-css', $pluginDirectory.'/style.min.css' );
 }
 
 
@@ -54,9 +54,9 @@ function init_AjaxSubmit(){
   include($pluginDirectory.'home.php');
 }
 
-add_action( 'wp_ajax_' . 'wpa_49691', 'your_ajax_callback_function_name' );
-add_action( 'wp_ajax_nopriv_' . 'wpa_49691', 'your_ajax_callback_function_name' );
-function your_ajax_callback_function_name(){
+add_action( 'wp_ajax_' . 'wpa_49691', 'ajax_form_update_options' );
+add_action( 'wp_ajax_nopriv_' . 'wpa_49691', 'ajax_form_update_options' );
+function ajax_form_update_options(){
   
   // Récupération des données du form
   $params = array();
