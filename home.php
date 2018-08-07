@@ -64,6 +64,7 @@
   <br><br>
   
   <button id="submit" type="submit" class="button button-primary">Enregistrer</button>
+  <button id="reset" type="reset" class="button button-secondary">Effacer toutes les données</button>
 </form>
 
 </div>
