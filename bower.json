@@ -3,6 +3,6 @@
   "directory": "bower_components",
   "dependencies": {
     "sweetalert2": "^7.26.10",
-    "font-awesome": "^5.2.0",
+    "font-awesome": "^5.2.0"
   }
 }
