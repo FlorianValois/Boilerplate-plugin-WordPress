@@ -7,7 +7,7 @@ Author: Florian Valois
 Author URI: https://florian-valois.com/
 Text Domain: boilerplate-plugin-wordpress
 Domain Path: /languages/
-Version: 0.0.8
+Version: 0.0.10
 */
 
 if( ! class_exists( 'Smashing_Updater' ) ){  
@@ -15,8 +15,7 @@ if( ! class_exists( 'Smashing_Updater' ) ){
 }
 $updater = new Smashing_Updater( __FILE__ );
 $updater->set_username( 'FlorianValois' );
-$updater->set_repository( 'boilerplate-plugin-wordpress
-' );
+$updater->set_repository( 'boilerplate-plugin-wordpress' );
 $updater->initialize();
 
 
