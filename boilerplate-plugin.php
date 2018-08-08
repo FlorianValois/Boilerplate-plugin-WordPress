@@ -2,13 +2,22 @@
 /*
 Plugin Name: Boilerplate plugin
 Plugin URI: https://florian-valois.com/
-Description: A save page plugin
+Description:  A boilerplate plugin for WordPress with many options 
 Author: Florian Valois
 Author URI: https://florian-valois.com/
 Text Domain: boilerplate-plugin
 Domain Path: /languages/
-Version: 0.10
+Version: 0.1
 */
+
+if( ! class_exists( 'Smashing_Updater' ) ){
+	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+}
+$updater = new Smashing_Updater( __FILE__ );
+$updater->set_username( 'FlorianValois' );
+$updater->set_repository( 'Boilerplate-plugin-WordPress' );
+$updater->initialize();
+
 
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
@@ -24,7 +33,6 @@ function stop_heartbeat() {
 add_action( 'admin_init', 'import_style_script' );
 function import_style_script() {
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
-  //wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.1.1/css/all.css' );
   
   /* Sweet Alert 2 */
   wp_enqueue_script( 'sweetalert2-script', $pluginDirectory.'/bower_components/sweetalert2/dist/sweetalert2.min.js', false, '', true);
