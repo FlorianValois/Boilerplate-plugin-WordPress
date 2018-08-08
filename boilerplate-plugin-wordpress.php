@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Boilerplate plugin
-Plugin URI: https://florian-valois.com/
+Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress
 Description:  A boilerplate plugin for WordPress with many options 
 Author: Florian Valois
 Author URI: https://florian-valois.com/
 Text Domain: boilerplate-plugin-wordpress
 Domain Path: /languages/
-Version: 0.0.5
+Version: 0.0.6
 */
 
 add_action( 'init', 'github_plugin_updater_test_init' );
