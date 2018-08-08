@@ -5,24 +5,42 @@ Plugin URI: https://florian-valois.com/
 Description:  A boilerplate plugin for WordPress with many options 
 Author: Florian Valois
 Author URI: https://florian-valois.com/
-Text Domain: boilerplate-plugin
+Text Domain: boilerplate-plugin-wordpress
 Domain Path: /languages/
-Version: 0.0.2
+Version: 0.0.3
 */
 
-if( ! class_exists( 'Smashing_Updater' ) ){
-	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+add_action( 'init', 'github_plugin_updater_test_init' );
+function github_plugin_updater_test_init() {
+  
+  $name = 'FlorianValois';
+  $repository = 'boilerplate-plugin-wordpress';
+  
+  include_once 'updater.php';
+  define( 'WP_GITHUB_FORCE_UPDATE', true );
+  if ( is_admin() ) {
+    $config = array(
+      'slug' => plugin_basename( __FILE__ ),
+      'proper_folder_name' => 'github-updater',
+      'api_url' => 'https://api.github.com/repos/'.$name.'/'.$repository.'',
+      'raw_url' => 'https://raw.github.com/'.$name.'/'.$repository.'/master',
+      'github_url' => 'https://github.com/'.$name.'/'.$repository.'',
+      'zip_url' => 'https://github.com/'.$name.'/'.$repository.'/archive/master.zip',
+      'sslverify' => true,
+      'requires' => '3.0',
+      'tested' => '3.3',
+      'readme' => 'README.md',
+      'access_token' => '',
+    );
+    new WP_GitHub_Updater( $config );
+  }
 }
-$updater = new Smashing_Updater( __FILE__ );
-$updater->set_username( 'FlorianValois' );
-$updater->set_repository( 'Boilerplate-plugin-WordPress' );
-$updater->initialize();
 
 
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
-  add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
+  add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin-wordpress', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
 }
 
 add_action( 'admin_init', 'stop_heartbeat', 1 );
