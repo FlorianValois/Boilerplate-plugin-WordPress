@@ -25,7 +25,7 @@
   
   Input (Range) :<br>
   <div class="range">
-    <input type="range" list="tickmarks" name="range_1" id="range" value="<?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?>" min="0" max="100">
+    <input type="range" name="range_1" id="range" value="<?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?>" min="0" max="100">
     <span><?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?></span>
   </div>
   

@@ -1,4 +1,6 @@
 $pluginName: 'boilerplate-plugin';
+
+
 body {
   /* 
   Paramétrage Sweet Alert 2
@@ -35,6 +37,7 @@ body {
   */
   &.toplevel_page_#{$pluginName} {
     background: #ffffff;
+    @import 'scss/input-range';
     #wpwrap {}
   }
 }
@@ -43,5 +46,3 @@ body {
   color: #ffa700;
   font-weight: bold;
 }
-
-@import 'scss/input-range';
