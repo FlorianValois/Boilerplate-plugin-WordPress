@@ -8,8 +8,21 @@ Author: Florian Valois
 Author URI: https://florian-valois.com/
 Text Domain: boilerplate-plugin-wordpress
 Domain Path: /languages/
-Version: 0.0.12
+Version: 0.0.13
 */
+
+// Autoload
+require_once( dirname( __FILE__ ) . '/vendor/autoload.php' );
+
+add_action( 'init', 'activate_autoupdate' );
+function activate_autoupdate() {
+	$plugin_slug = plugin_basename( __FILE__ ); // e.g. `hello/hello.php`.
+	$gh_user = 'FlorianValois';                      // The user name of GitHub.
+	$gh_repo = 'boilerplate-plugin-wordpress';       // The repository name of your plugin.
+
+	// Activate automatic update.
+	new Miya\WP\GH_Auto_Updater( $plugin_slug, $gh_user, $gh_repo );
+}
 
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
