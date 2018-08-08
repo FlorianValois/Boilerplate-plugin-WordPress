@@ -2,22 +2,22 @@
 /*
 Plugin Name: Boilerplate plugin
 Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress
+Git URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress
 Description:  A boilerplate plugin for WordPress with many options 
 Author: Florian Valois
 Author URI: https://florian-valois.com/
 Text Domain: boilerplate-plugin-wordpress
 Domain Path: /languages/
-Version: 0.0.10
+Version: 0.0.11
 */
 
-if( ! class_exists( 'Smashing_Updater' ) ){  
-	include( plugin_dir_path( __FILE__ ) . 'updater.php' );
+add_action( 'plugins_loaded', 'myplugin_git_updater' );
+function myplugin_git_updater() {
+	if ( is_admin() && !class_exists( 'GPU_Controller' ) ) {
+		require_once dirname( __FILE__ ) . '/git-plugin-updates/git-plugin-updates.php';
+		add_action( 'plugins_loaded', 'GPU_Controller::get_instance', 20 );
+	}
 }
-$updater = new Smashing_Updater( __FILE__ );
-$updater->set_username( 'FlorianValois' );
-$updater->set_repository( 'boilerplate-plugin-wordpress' );
-$updater->initialize();
-
 
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
