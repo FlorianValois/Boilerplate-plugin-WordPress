@@ -16,6 +16,28 @@ function test_plugin_setup_menu(){
   add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
 }
 
+add_action('admin_init', 'update_boilerplate_plugin');
+function update_boilerplate_plugin(){
+  	include_once 'updater.php';
+	define( 'WP_GITHUB_FORCE_UPDATE', true );
+	if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
+		$config = array(
+			'slug' => plugin_basename( __FILE__ ),
+			'proper_folder_name' => 'github-updater',
+			'api_url' => 'https://api.github.com/repos/FlorianValois/Boilerplate-plugin-WordPress',
+			'raw_url' => 'https://raw.github.com/FlorianValois/Boilerplate-plugin-WordPress/master',
+			'github_url' => 'https://github.com/FlorianValois/Boilerplate-plugin-WordPress',
+			'zip_url' => 'https://github.com/FlorianValois/Boilerplate-plugin-WordPress/archive/master.zip',
+			'sslverify' => true,
+			'requires' => '3.0',
+			'tested' => '3.3',
+			'readme' => 'README.md',
+			'access_token' => '',
+		);
+		new WP_GitHub_Updater( $config );
+	}
+}
+
 add_action( 'admin_init', 'stop_heartbeat', 1 );
 function stop_heartbeat() {
   wp_deregister_script('heartbeat');
