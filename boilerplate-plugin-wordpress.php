@@ -13,10 +13,12 @@ Version: 0.0.3
 add_action( 'init', 'github_plugin_updater_test_init' );
 function github_plugin_updater_test_init() {
   
+  $pluginDirectory = plugin_dir_path( __FILE__ );
   $name = 'FlorianValois';
   $repository = 'boilerplate-plugin-wordpress';
   
-  include_once 'updater.php';
+  include($pluginDirectory.'updater.php');
+  
   define( 'WP_GITHUB_FORCE_UPDATE', true );
   if ( is_admin() ) {
     $config = array(
@@ -29,8 +31,8 @@ function github_plugin_updater_test_init() {
       'sslverify' => true,
       'requires' => '3.0',
       'tested' => '3.3',
-      'readme' => 'README.md',
-      'access_token' => '',
+      'readme' => 'README.md'
+//      'access_token' => ''
     );
     new WP_GitHub_Updater( $config );
   }
