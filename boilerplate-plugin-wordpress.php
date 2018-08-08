@@ -7,7 +7,7 @@ Author: Florian Valois
 Author URI: https://florian-valois.com/
 Text Domain: boilerplate-plugin-wordpress
 Domain Path: /languages/
-Version: 0.0.3
+Version: 0.0.5
 */
 
 add_action( 'init', 'github_plugin_updater_test_init' );
