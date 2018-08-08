@@ -50,7 +50,17 @@ jQuery(document).ready(function ($) {
             text: 'Vos modifications ont été sauvegardées avec succès.',
             backdrop: 'rgba(0, 0, 0, .5)'
           })
-        } else {
+        }
+        if (postData.delete) {
+          swal({
+            position: 'center',
+            type: 'success',
+            title: 'Supprimé !',
+            text: 'Tous les champs ont été vidés avec succès !',
+            backdrop: 'rgba(0, 0, 0, .5)'
+          })
+        }
+        else {
           swal({
             position: 'center',
             type: 'info',
