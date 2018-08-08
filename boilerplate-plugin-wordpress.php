@@ -11,14 +11,6 @@ Domain Path: /languages/
 Version: 0.0.12
 */
 
-add_action( 'plugins_loaded', 'myplugin_git_updater' );
-function myplugin_git_updater() {
-	if ( is_admin() && !class_exists( 'GPU_Controller' ) ) {
-		require_once dirname( __FILE__ ) . '/git-plugin-updates/git-plugin-updates.php';
-		add_action( 'plugins_loaded', 'GPU_Controller::get_instance', 20 );
-	}
-}
-
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
