@@ -7,36 +7,17 @@ Author: Florian Valois
 Author URI: https://florian-valois.com/
 Text Domain: boilerplate-plugin-wordpress
 Domain Path: /languages/
-Version: 0.0.7
+Version: 0.0.8
 */
 
-add_action( 'init', 'github_plugin_updater_test_init' );
-function github_plugin_updater_test_init() {
-  
-  $pluginDirectory = plugin_dir_path( __FILE__ );
-  $name = 'FlorianValois';
-  $repository = 'boilerplate-plugin-wordpress';
-  
-  include($pluginDirectory.'updater.php');
-  
-  define( 'WP_GITHUB_FORCE_UPDATE', true );
-  if ( is_admin() ) {
-    $config = array(
-      'slug' => plugin_basename( __FILE__ ),
-      'proper_folder_name' => 'github-updater',
-      'api_url' => 'https://api.github.com/repos/'.$name.'/'.$repository.'',
-      'raw_url' => 'https://raw.github.com/'.$name.'/'.$repository.'/master',
-      'github_url' => 'https://github.com/'.$name.'/'.$repository.'',
-      'zip_url' => 'https://github.com/'.$name.'/'.$repository.'/archive/master.zip',
-      'sslverify' => true,
-      'requires' => '3.0',
-      'tested' => '3.3',
-      'readme' => 'README.md'
-//      'access_token' => ''
-    );
-    new WP_GitHub_Updater( $config );
-  }
+if( ! class_exists( 'Smashing_Updater' ) ){  
+	include( plugin_dir_path( __FILE__ ) . 'updater.php' );
 }
+$updater = new Smashing_Updater( __FILE__ );
+$updater->set_username( 'FlorianValois' );
+$updater->set_repository( 'boilerplate-plugin-wordpress
+' );
+$updater->initialize();
 
 
 add_action('admin_menu','test_plugin_setup_menu');
