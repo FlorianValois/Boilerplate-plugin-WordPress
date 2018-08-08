@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
 
   /* Suppression des values vides pour l'enregistrement */
   function getFormData($form, no_empty) {
-    var formData = $('#formAjax').serializeArray();
+    var formData = $('.formAjax').serializeArray();
     var formData_array = {};
 
     $.each(formData, function (i, item) {
@@ -29,9 +29,10 @@ jQuery(document).ready(function ($) {
   }
 
   /* Enregistrement des options en Ajax */
-  $('#formAjax').on('submit', function (e) {
+  $('.formAjax').on('submit', function (e) {
+    console.log($(this));
     e.preventDefault();
-    var json = $.param(getFormData($('#formAjax'), true));
+    var json = $.param(getFormData($('.formAjax'), true));
     var postData = {
       action: 'wpa_49691',
       data: json
@@ -42,6 +43,7 @@ jQuery(document).ready(function ($) {
       dataType: "json",
       url: youruniquejs_vars.ajaxurl,
       success: function (postData) {
+        console.log(postData.update);
         if (postData.update) {
           swal({
             position: 'center',
@@ -51,7 +53,7 @@ jQuery(document).ready(function ($) {
             backdrop: 'rgba(0, 0, 0, .5)'
           })
         }
-        if (postData.delete) {
+        else if (postData.delete) {
           swal({
             position: 'center',
             type: 'success',
@@ -59,7 +61,7 @@ jQuery(document).ready(function ($) {
             text: 'Tous les champs ont été vidés avec succès !',
             backdrop: 'rgba(0, 0, 0, .5)'
           })
-        }
+        } 
         else {
           swal({
             position: 'center',

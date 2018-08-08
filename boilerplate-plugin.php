@@ -65,10 +65,7 @@ function ajax_form_update_options(){
   
   // Sauvegarde des données
   $option_name = 'boilerplate_plugin' ;
-  //$new_value = json_encode( $params );  
-  
-//  var_dump($_POST['data']);
-    
+      
   if($_POST['data']){
     echo json_encode(array(
       'update' => update_option( $option_name, $params )

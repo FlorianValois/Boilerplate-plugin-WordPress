@@ -6,7 +6,7 @@
   
 <h1>Boilerplate plugin</h1>
 <br><br>
-<form id="formAjax" method="post" action="">
+<form id="formAjax2" class="formAjax" method="post" action="">
  
   Input (Text) :<br>
   <input type="text" name="prenom" id="prenom" value="<?php echo $data['prenom']; ?>">
