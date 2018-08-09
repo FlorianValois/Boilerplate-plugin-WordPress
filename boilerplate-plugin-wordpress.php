@@ -8,7 +8,7 @@ Author: Florian Valois
 Author URI: https://florian-valois.com/
 Text Domain: boilerplate-plugin-wordpress
 Domain Path: /languages/
-Version: 0.1.1
+Version: 0.1.2
 */
 
 require 'plugin-update-checker/plugin-update-checker.php';
@@ -17,6 +17,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'boilerplate-plugin-wordpress'
 );
+$myUpdateChecker->setBranch('master');
 
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){

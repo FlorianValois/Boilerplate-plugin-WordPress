@@ -1,7 +1,7 @@
 === Boilerplate plugin ===
-Contributors: user, user, user
-Tags: tag, tag, tag
-Donate link: http://example.com/
+Contributors: florianvalois
+Tags: 
+Donate link: http://florian-valois.com/
 Requires at least: 4.0
 Tested up to: 4.8
 Requires PHP: 5.6
