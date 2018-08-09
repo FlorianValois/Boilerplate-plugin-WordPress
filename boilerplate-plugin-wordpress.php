@@ -3,7 +3,7 @@
 Plugin Name: Boilerplate plugin
 Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress/
 Description:  A boilerplate plugin for WordPress with many options 
-Version: 0.2
+Version: 0.2.1
 Author: Florian Valois
 Author URI: https://florian-valois.com
 Text Domain: boilerplate-plugin-wordpress
@@ -24,11 +24,6 @@ add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
   add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin-wordpress', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
-}
-
-add_action( 'admin_init', 'stop_heartbeat', 1 );
-function stop_heartbeat() {
-  wp_deregister_script('heartbeat');
 }
 
 add_action( 'admin_init', 'import_style_script' );
