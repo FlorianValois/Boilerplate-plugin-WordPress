@@ -8,7 +8,7 @@ body {
   /* Lien plugin dans la barre de navigation */
   #adminmenu {
     #toplevel_page_#{$pluginName} {
-      a {
+      > a {
         color: darken(#ffc62c, 35%);
         &.menu-top {
           background: #ffc62c;
@@ -19,11 +19,16 @@ body {
           }
         }
       }
+      &.wp-has-current-submenu {
+        .wp-submenu {
+          background-color: darken(#ffc62c, 10%);
+        }
+      }
     }
     .wp-menu-image {
       img {
         width: auto;
-        height: 20px;
+        height: 16px;
       }
     }
   }
@@ -33,6 +38,29 @@ body {
     @import 'scss/input-range';
     #wpwrap {}
   }
+  &.boilerplate-plugin_page_#{$pluginName}-2 {
+    #tabs{
+      display: flex;
+      nav{
+        width: 200px;
+        ul{
+          margin: 0;
+          li{
+            margin: 0;
+            a{
+              display: block;
+            }
+          }
+        }
+      }
+      #content {
+        position: relative;
+        background: #ffffff;
+        width: calc(100% - 200px);
+      }
+    }
+  }
+
 }
 
 #rangValue {

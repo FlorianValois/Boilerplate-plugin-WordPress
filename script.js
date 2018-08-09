@@ -52,8 +52,7 @@ jQuery(document).ready(function ($) {
             text: 'Vos modifications ont été sauvegardées avec succès.',
             backdrop: 'rgba(0, 0, 0, .5)'
           })
-        }
-        else if (postData.delete) {
+        } else if (postData.delete) {
           swal({
             position: 'center',
             type: 'success',
@@ -61,8 +60,7 @@ jQuery(document).ready(function ($) {
             text: 'Tous les champs ont été vidés avec succès !',
             backdrop: 'rgba(0, 0, 0, .5)'
           })
-        } 
-        else {
+        } else {
           swal({
             position: 'center',
             type: 'info',
@@ -104,5 +102,9 @@ jQuery(document).ready(function ($) {
     var $image = $(this).siblings('.image-preview');
     $image.attr('src', $(this).val());
   });
+
+
+  $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+  $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
 
 });

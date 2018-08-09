@@ -32,9 +32,16 @@ add_action( 'admin_init', 'import_style_script' );
 function import_style_script() {
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
   
+//  wp_enqueue_style( 'jqueri-ui-css', $pluginDirectory.'/bower_components/jquery-ui/themes/base/jquery-ui.min.css' );
+  wp_enqueue_script( 'jqueri-ui-script', $pluginDirectory.'/bower_components/jquery-ui/jquery-ui.min.js', false, '', true);
+  
   /* Sweet Alert 2 */
   wp_enqueue_script( 'sweetalert2-script', $pluginDirectory.'/bower_components/sweetalert2/dist/sweetalert2.min.js', false, '', true);
   wp_enqueue_style( 'sweetalert2-css', $pluginDirectory.'/bower_components/sweetalert2/dist/sweetalert2.min.css' );
+  
+  /* FontAwesome */
+  wp_enqueue_style( 'fontawesome-css', $pluginDirectory.'/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css' );
+  wp_enqueue_script( 'fontawesome-script', $pluginDirectory.'/bower_components/font-awesome/svg-with-js/js/fontawesome-all.js', false, '', true);
   
   /* Color Picker WordPress*/
   wp_enqueue_style('wp-color-picker');
