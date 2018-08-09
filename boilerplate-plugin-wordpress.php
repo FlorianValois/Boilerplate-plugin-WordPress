@@ -3,7 +3,7 @@
 Plugin Name: Boilerplate plugin
 Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress/
 Description:  A boilerplate plugin for WordPress with many options 
-Version: 0.1.8
+Version: 0.2
 Author: Florian Valois
 Author URI: https://florian-valois.com
 Text Domain: boilerplate-plugin-wordpress
@@ -17,6 +17,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'boilerplate-plugin-wordpress'
 );
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
 $myUpdateChecker->setBranch('master');
 
 add_action('admin_menu','test_plugin_setup_menu');
