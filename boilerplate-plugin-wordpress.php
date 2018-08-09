@@ -11,6 +11,13 @@ Domain Path: /languages/
 Version: 0.1
 */
 
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/FlorianValois/boilerplate-plugin-wordpress/',
+	__FILE__,
+	'boilerplate-plugin-wordpress'
+);
+
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
