@@ -1,16 +1,11 @@
 $pluginName: 'boilerplate-plugin-wordpress';
 
-
 body {
-  /* 
-  Paramétrage Sweet Alert 2
-  */
+  /* Paramétrage Sweet Alert 2 */
   &.swal2-height-auto {
     height: 100% !important;
   }
-  /* 
-  Lien plugin dans la barre de navigation
-  */
+  /* Lien plugin dans la barre de navigation */
   #adminmenu {
     #toplevel_page_#{$pluginName} {
       a {
@@ -32,9 +27,7 @@ body {
       }
     }
   }
-  /* 
-  Page du plugin
-  */
+  /* Page du plugin */
   &.toplevel_page_#{$pluginName} {
     background: #ffffff;
     @import 'scss/input-range';
