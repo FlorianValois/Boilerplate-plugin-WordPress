@@ -24,6 +24,8 @@ add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
   add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin-wordpress', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
+  add_submenu_page( 'boilerplate-plugin-wordpress', 'My Custom Page', 'My Custom Page', 'manage_options', 'boilerplate-plugin-wordpress');
+  add_submenu_page( 'boilerplate-plugin-wordpress', 'My Custom Page', 'My Custom Page', 'manage_options', 'boilerplate-plugin-wordpress-2', 'init_page2');
 }
 
 add_action( 'admin_init', 'import_style_script' );
@@ -55,6 +57,11 @@ function import_style_script() {
 function init_AjaxSubmit(){
   $pluginDirectory = plugin_dir_path( __FILE__ );
   include($pluginDirectory.'home.php');
+}
+
+function init_page2(){
+  $pluginDirectory = plugin_dir_path( __FILE__ );
+  include($pluginDirectory.'page2.php');
 }
 
 add_action( 'wp_ajax_' . 'wpa_49691', 'ajax_form_update_options' );
