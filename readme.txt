@@ -5,7 +5,7 @@ Donate link: http://florian-valois.com/
 Requires at least: 4.0
 Tested up to: 4.9.8
 Requires PHP: 5.6
-Stable tag: 0.1.6
+Stable tag: 0.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,16 +55,9 @@ Answer to foo bar dilemma.
 3. The screenshot description corresponds to screenshot-3.(png|jpg|jpeg|gif).
 
 == Changelog ==
-= 0.2 =
-* A change since the previous version.
-* Another change.
-
-= 0.1 =
-* Initial release.
+= 0.1.7 =
+Change information plugin
 
 == Upgrade Notice ==
-= 0.2 =
-Upgrade notices describe the reason a user should upgrade
-
-= 0.1 =
-This version fixes a security related bug. Upgrade immediately.
+= 0.1.7 =
+Change information plugin

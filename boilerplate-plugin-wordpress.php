@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Boilerplate plugin
-Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress
-Git URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress
+Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress/
 Description:  A boilerplate plugin for WordPress with many options 
+Version: 0.1.7
 Author: Florian Valois
-Author URI: https://florian-valois.com/
+Author URI: https://florian-valois.com
 Text Domain: boilerplate-plugin-wordpress
-Domain Path: /languages/
-Version: 0.1.6
+Domain Path: /languages
+GitHub Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress/
 */
 
 require 'plugin-update-checker/plugin-update-checker.php';
