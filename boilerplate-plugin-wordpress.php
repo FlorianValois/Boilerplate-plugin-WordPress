@@ -11,6 +11,10 @@ Domain Path: /languages
 GitHub Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress/
 */
 
+if (!defined('ABSPATH')) {
+	exit;
+}
+
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/FlorianValois/boilerplate-plugin-wordpress/',

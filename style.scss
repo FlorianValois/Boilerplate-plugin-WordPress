@@ -40,108 +40,136 @@ body {
   }
   &.boilerplate-plugin_page_#{$pluginName}-2 {
     font-family: "Open Sans", sans-serif;
+    *{ 
+      box-sizing: border-box;
+    }
     #tabs {
       display: flex;
-      nav {
-        position: relative;
-        z-index: 2;
-        width: 240px;
-        ul {
-          margin: 0;
-          li {
+      #logo {
+        width: 100%;
+        height: 240px;
+        padding: 20px;
+        span{
+          position: relative;
+          display: block;
+          width: 200px;
+          height: 200px;
+          background: lighten(#34333B, 77%);
+          border: 3px dashed lighten(#34333B, 70%);
+          &:before{
+            font-family: "Font Awesome 5 Free";
+            font-weight: 400;
+            content: "\f067";
+          }
+        }
+      }
+      #navigation {
+        nav {
+          position: relative;
+          z-index: 2;
+          width: 240px;
+          ul {
             margin: 0;
-            a {
-              position: relative;
-              overflow: hidden;
-              display: block;
-              background: lighten(#34333B, 77%);
-              padding: 15px 17px 15px 50px;
-              border-bottom: 1px solid lighten(#34333B, 70%);
-              border-right: 1px solid lighten(#34333B, 70%);
-              color: lighten(#34333B, 60%);
-              margin-left: 10px;
-              text-decoration: none;
-              transition: all ease .3s;
-              * {
-                transition: all ease .3s;
-              }
-              .title {
-                font-size: 1.1em;
-                text-transform: uppercase;
-                font-weight: 600;
-              }
-              .description {
-                font-weight: 400;
-                font-style: italic;
-              }
-              svg {
-                position: absolute;
-                top: 50%;
-                left: 25px;
-                transform: translateY(-50%) translateX(-50%);
-                color: lighten(#34333B, 60%);
-                font-size: 1.5em;
-              }
-              &:before {
-                position: absolute;
+            li {
+              margin: 0;
+              a {
+                position: relative;
+                overflow: hidden;
                 display: block;
-                content: "";
-                top: 0;
-                left: 0;
-                width: 1px;
-                height: 100%;
-                background: lighten(#34333B, 70%);
-                transition: width ease .3s;
-              }
-              &:hover {
-                margin-left: 0;
-                background: #ffffff;
-                border-right-color: transparent;
+                background: lighten(#34333B, 77%);
+                padding: 15px 17px 15px 50px;
+                border-bottom: 1px solid lighten(#34333B, 70%);
+                border-right: 1px solid lighten(#34333B, 70%);
+                color: lighten(#34333B, 60%);
+                margin-left: 10px;
+                text-decoration: none;
                 transition: all ease .3s;
                 * {
                   transition: all ease .3s;
                 }
                 .title {
-                  color: #ffc62c;
+                  font-size: 1.1em;
+                  text-transform: uppercase;
+                  font-weight: 600;
                 }
                 .description {
-                  color: lighten(#34333B, 40%);
+                  font-weight: 400;
+                  font-style: italic;
                 }
                 svg {
-                  color: #ffc62c;
+                  position: absolute;
+                  top: 50%;
+                  left: 25px;
+                  transform: translateY(-50%) translateX(-50%);
+                  color: lighten(#34333B, 60%);
+                  font-size: 1.5em;
                 }
                 &:before {
-                  width: 3px;
-                  background: #ffc62c;
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  top: 0;
+                  left: 0;
+                  width: 1px;
+                  height: 100%;
+                  background: lighten(#34333B, 70%);
                   transition: width ease .3s;
                 }
+                &:hover {
+                  margin-left: 0;
+                  background: #ffffff;
+                  border-right-color: transparent;
+                  transition: all ease .3s;
+                  * {
+                    transition: all ease .3s;
+                  }
+                  .title {
+                    color: #ffc62c;
+                  }
+                  .description {
+                    color: lighten(#34333B, 40%);
+                  }
+                  svg {
+                    color: #ffc62c;
+                  }
+                  &:before {
+                    width: 3px;
+                    background: #ffc62c;
+                    transition: width ease .3s;
+                  }
+                }
+                &:focus {
+                  box-shadow: none;
+                }
               }
-            }
-            &.ui-tabs-active,
-            &.ui-state-active {
-              a {
-                margin-left: 0;
-                background: #ffffff;
-                border-right-color: transparent;
-                .title {
-                  color: #ffc62c;
-                }
-                .description {
-                  color: lighten(#34333B, 40%);
-                }
-                svg {
-                  color: #ffc62c;
-                }
-                &:before {
-                  width: 3px;
-                  background: #ffc62c;
-                  transition: width ease .3s;
+              &.ui-tabs-active,
+              &.ui-state-active {
+                a {
+                  z-index: 1;
+                  margin-left: 0;
+                  background: #ffffff;
+                  border-right-color: transparent;
+                  box-shadow: -5px 0px 5px;
+                  .title {
+                    color: #ffc62c;
+                  }
+                  .description {
+                    color: lighten(#34333B, 40%);
+                  }
+                  svg {
+                    color: #ffc62c;
+                  }
+                  &:before {
+                    width: 3px;
+                    background: #ffc62c;
+                    transition: width ease .3s;
+                  }
                 }
               }
-            }
-            &:first-child {
-              a {
-                border-top: 1px solid lighten(#34333B, 70%);
+              &:first-child {
+                a {
+                  border-top: 1px solid lighten(#34333B, 70%);
+                }
               }
             }
           }

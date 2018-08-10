@@ -1,4 +1,7 @@
 <?php
+  if (!defined('ABSPATH')) {
+      exit;
+  }
   $data = get_option('boilerplate_plugin');
 ?>
 
