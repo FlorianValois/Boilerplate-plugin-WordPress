@@ -113,7 +113,6 @@ body {
                   transition: width ease .3s;
                 }
                 &:hover {
-                  margin-left: 0;
                   background: #ffffff;
                   border-right-color: transparent;
                   transition: all ease .3s;
@@ -121,17 +120,16 @@ body {
                     transition: all ease .3s;
                   }
                   .title {
-                    color: #ffc62c;
+                    color: #34333B;
                   }
                   .description {
                     color: lighten(#34333B, 40%);
                   }
                   svg {
-                    color: #ffc62c;
+                    color: #34333B;
                   }
                   &:before {
-                    width: 3px;
-                    background: #ffc62c;
+                    background: #34333B;
                     transition: width ease .3s;
                   }
                 }
