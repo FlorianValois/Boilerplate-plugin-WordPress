@@ -3,7 +3,7 @@
 Plugin Name: Boilerplate plugin
 Plugin URI: https://github.com/FlorianValois/boilerplate-plugin-wordpress/
 Description:  A boilerplate plugin for WordPress with many options 
-Version: 0.2.1
+Version: 0.2.2
 Author: Florian Valois
 Author URI: https://florian-valois.com
 Text Domain: boilerplate-plugin-wordpress
