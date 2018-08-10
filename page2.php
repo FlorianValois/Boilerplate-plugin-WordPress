@@ -8,18 +8,21 @@
         <a href="#tabs-1">
           <div class="title">Lorem ipsum</div>
           <div class="description">Nunc tincidunt</div>
+          <i class="fas fa-cog"></i>
         </a>
       </li>
       <li>
         <a href="#tabs-2">
           <div class="title">Lorem ipsum</div>
           <div class="description">Nunc tincidunt</div>
+          <i class="fas fa-sliders-h"></i>
         </a>
       </li>
       <li>
         <a href="#tabs-3">
           <div class="title">Lorem ipsum</div>
           <div class="description">Nunc tincidunt</div>
+          <i class="fas fa-cogs"></i>
         </a>
       </li>
     </ul>

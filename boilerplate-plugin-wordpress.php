@@ -32,6 +32,9 @@ add_action( 'admin_init', 'import_style_script' );
 function import_style_script() {
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
   
+  /* Google Font */
+  wp_enqueue_style( 'opensans-css', 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' );
+  
 //  wp_enqueue_style( 'jqueri-ui-css', $pluginDirectory.'/bower_components/jquery-ui/themes/base/jquery-ui.min.css' );
   wp_enqueue_script( 'jqueri-ui-script', $pluginDirectory.'/bower_components/jquery-ui/jquery-ui.min.js', false, '', true);
   
