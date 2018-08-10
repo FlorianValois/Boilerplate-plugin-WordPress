@@ -36,147 +36,149 @@ body {
     #wpwrap {}
   }
   &.boilerplate-plugin_page_#{$pluginName}-2 {
-    font-family: "Open Sans", sans-serif;
-    * {
-      box-sizing: border-box;
-    }
-    #tabs {
-      display: flex;
-      #logo {
-        width: 100%;
-        height: 240px;
-        padding: 20px;
-        span {
-          position: relative;
-          width: 200px;
-          height: 200px;
-          background: lighten(#34333B, 77%);
-          border: 3px dashed lighten(#34333B, 70%);
-          font-weight: 600;
-          font-size: 1.5em;
-          text-transform: uppercase;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+    .wrap {
+      font-family: "Open Sans", sans-serif;
+      * {
+        box-sizing: border-box;
       }
-      #navigation {
-        nav {
-          position: relative;
-          z-index: 2;
-          width: 240px;
-          ul {
-            margin: 0;
-            li {
+      #tabs {
+        display: flex;
+        #logo {
+          width: 100%;
+          height: 240px;
+          padding: 20px;
+          span {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: lighten(#34333B, 77%);
+            border: 3px dashed lighten(#34333B, 70%);
+            font-weight: 600;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        #navigation {
+          nav {
+            position: relative;
+            z-index: 2;
+            width: 240px;
+            ul {
               margin: 0;
-              a {
-                position: relative;
-                overflow: hidden;
-                display: block;
-                background: lighten(#34333B, 77%);
-                padding: 15px 17px 15px 50px;
-                border-bottom: 1px solid lighten(#34333B, 70%);
-                border-right: 1px solid lighten(#34333B, 70%);
-                color: lighten(#34333B, 60%);
-                margin-left: 5px;
-                text-decoration: none;
-                transition: all ease .3s;
-                * {
-                  transition: all ease .3s;
-                }
-                .title {
-                  font-size: 1.1em;
-                  text-transform: uppercase;
-                  font-weight: 600;
-                }
-                .description {
-                  font-weight: 400;
-                  font-style: italic;
-                }
-                svg {
-                  position: absolute;
-                  top: 50%;
-                  left: 25px;
-                  transform: translateY(-50%) translateX(-50%);
-                  color: lighten(#34333B, 60%);
-                  font-size: 1.5em;
-                }
-                &:before {
-                  position: absolute;
+              li {
+                margin: 0;
+                a {
+                  position: relative;
+                  overflow: hidden;
                   display: block;
-                  content: "";
-                  top: 0;
-                  left: 0;
-                  width: 1px;
-                  height: 100%;
-                  background: lighten(#34333B, 70%);
-                  transition: width ease .3s;
-                }
-                &:hover {
-                  background: #ffffff;
-                  border-right-color: transparent;
+                  background: lighten(#34333B, 77%);
+                  padding: 15px 17px 15px 50px;
+                  border-bottom: 1px solid lighten(#34333B, 70%);
+                  border-right: 1px solid lighten(#34333B, 70%);
+                  color: lighten(#34333B, 60%);
+                  margin-left: 5px;
+                  text-decoration: none;
                   transition: all ease .3s;
                   * {
                     transition: all ease .3s;
                   }
                   .title {
-                    color: #34333B;
+                    font-size: 1.1em;
+                    text-transform: uppercase;
+                    font-weight: 600;
                   }
                   .description {
-                    color: lighten(#34333B, 40%);
+                    font-weight: 400;
+                    font-style: italic;
                   }
                   svg {
-                    color: #34333B;
+                    position: absolute;
+                    top: 50%;
+                    left: 25px;
+                    transform: translateY(-50%) translateX(-50%);
+                    color: lighten(#34333B, 60%);
+                    font-size: 1.5em;
                   }
                   &:before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: lighten(#34333B, 70%);
                     transition: width ease .3s;
                   }
-                }
-                &:focus {
-                  box-shadow: none;
-                }
-              }
-              &.ui-tabs-active,
-              &.ui-state-active {
-                a {
-                  z-index: 1;
-                  margin-left: 0;
-                  background: #ffffff;
-                  border-right-color: transparent;
-                  box-shadow: -6px 0px 6px lighten(#34333B, 65%);
-                  .title {
-                    color: #ffc62c;
+                  &:hover {
+                    background: #ffffff;
+                    border-right-color: transparent;
+                    transition: all ease .3s;
+                    * {
+                      transition: all ease .3s;
+                    }
+                    .title {
+                      color: #34333B;
+                    }
+                    .description {
+                      color: lighten(#34333B, 40%);
+                    }
+                    svg {
+                      color: #34333B;
+                    }
+                    &:before {
+                      transition: width ease .3s;
+                    }
                   }
-                  .description {
-                    color: lighten(#34333B, 40%);
-                  }
-                  svg {
-                    color: #ffc62c;
-                  }
-                  &:before {
-                    width: 3px;
-                    background: #ffc62c;
-                    transition: width ease .3s;
+                  &:focus {
+                    box-shadow: none;
                   }
                 }
-              }
-              &:first-child {
-                a {
-                  border-top: 1px solid lighten(#34333B, 70%);
+                &.ui-tabs-active,
+                &.ui-state-active {
+                  a {
+                    z-index: 1;
+                    margin-left: 0;
+                    background: #ffffff;
+                    border-right-color: transparent;
+                    box-shadow: -6px 0px 6px lighten(#34333B, 65%);
+                    .title {
+                      color: #ffc62c;
+                    }
+                    .description {
+                      color: lighten(#34333B, 40%);
+                    }
+                    svg {
+                      color: #ffc62c;
+                    }
+                    &:before {
+                      width: 3px;
+                      background: #ffc62c;
+                      transition: width ease .3s;
+                    }
+                  }
+                }
+                &:first-child {
+                  a {
+                    border-top: 1px solid lighten(#34333B, 70%);
+                  }
                 }
               }
             }
           }
         }
-      }
-      #content {
-        position: relative;
-        z-index: 1;
-        background: #ffffff;
-        width: calc(100% - 240px + 1px);
-        padding: 20px;
-        border: 1px solid lighten(#34333B, 70%);
-        margin-left: -1px;
+        #content {
+          position: relative;
+          z-index: 1;
+          background: #ffffff;
+          width: calc(100% - 240px + 1px);
+          padding: 20px;
+          border: 1px solid lighten(#34333B, 70%);
+          margin-left: -1px;
+        }
       }
     }
   }
