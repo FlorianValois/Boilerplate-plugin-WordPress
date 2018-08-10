@@ -26,10 +26,7 @@ body {
       }
     }
     .wp-menu-image {
-      img {
-        width: auto;
-        height: 16px;
-      }
+      img {}
     }
   }
   /* Page du plugin */
@@ -40,7 +37,7 @@ body {
   }
   &.boilerplate-plugin_page_#{$pluginName}-2 {
     font-family: "Open Sans", sans-serif;
-    *{ 
+    * {
       box-sizing: border-box;
     }
     #tabs {
@@ -49,18 +46,18 @@ body {
         width: 100%;
         height: 240px;
         padding: 20px;
-        span{
+        span {
           position: relative;
-          display: block;
           width: 200px;
           height: 200px;
           background: lighten(#34333B, 77%);
           border: 3px dashed lighten(#34333B, 70%);
-          &:before{
-            font-family: "Font Awesome 5 Free";
-            font-weight: 400;
-            content: "\f067";
-          }
+          font-weight: 600;
+          font-size: 1.5em;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
       #navigation {

@@ -27,7 +27,7 @@ $myUpdateChecker->setBranch('master');
 add_action('admin_menu','test_plugin_setup_menu');
 function test_plugin_setup_menu(){
   $pluginDirectory = plugins_url() .'/'. basename(dirname(__FILE__));
-  add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin-wordpress', 'init_AjaxSubmit', $pluginDirectory.'/favicon.png', 99 );
+  add_menu_page('Boilerplate plugin', 'Boilerplate plugin', 'manage_options', 'boilerplate-plugin-wordpress', 'init_AjaxSubmit', $pluginDirectory.'/favicon-min.png', 99 );
   add_submenu_page( 'boilerplate-plugin-wordpress', 'My Custom Page', 'My Custom Page', 'manage_options', 'boilerplate-plugin-wordpress');
   add_submenu_page( 'boilerplate-plugin-wordpress', 'My Custom Page', 'My Custom Page', 'manage_options', 'boilerplate-plugin-wordpress-2', 'init_page2');
 }

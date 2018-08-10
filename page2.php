@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
 <section id="tabs">
   <aside id="navigation">
     <div id="logo">
-      <span></span>
+      <span>Logo</span>
     </div>
     <nav>
       <ul>
