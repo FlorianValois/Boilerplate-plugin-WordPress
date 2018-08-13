@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 }
 ?>
 <div class="wrap">
-<h1>Réglages généraux</h1>
+<!--<h1>Réglages généraux</h1>-->
 
 <section id="tabs">
   <aside id="navigation">

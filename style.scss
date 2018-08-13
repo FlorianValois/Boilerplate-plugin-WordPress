@@ -33,7 +33,6 @@ body {
   &.toplevel_page_#{$pluginName} {
     background: #ffffff;
     @import 'scss/input-range';
-    #wpwrap {}
   }
   &.boilerplate-plugin_page_#{$pluginName}-2 {
     .wrap {
@@ -129,9 +128,6 @@ body {
                     svg {
                       color: #34333B;
                     }
-                    &:before {
-                      transition: width ease .3s;
-                    }
                   }
                   &:focus {
                     box-shadow: none;
@@ -154,10 +150,8 @@ body {
                     svg {
                       color: #ffc62c;
                     }
-                    &:before {
-                      width: 3px;
-                      background: #ffc62c;
-                      transition: width ease .3s;
+                    &:before{
+                      opacity: 0;
                     }
                   }
                 }
