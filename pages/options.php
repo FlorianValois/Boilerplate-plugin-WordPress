@@ -3,6 +3,9 @@
       exit;
   }
   $data = get_option('boilerplate_plugin');
+
+function options_page(){
+
 ?>
 
 <div class="wrap">
@@ -90,3 +93,6 @@
 </form>
 
 </div>
+<?php
+}
+?>

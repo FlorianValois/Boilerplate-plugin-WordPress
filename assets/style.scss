@@ -32,7 +32,7 @@ body {
   /* Page du plugin */
   &.toplevel_page_#{$pluginName} {
     background: #ffffff;
-    @import 'scss/input-range';
+    @import 'scss/input/range-style-1';
   }
   &.boilerplate-plugin_page_#{$pluginName}-2 {
     .wrap {

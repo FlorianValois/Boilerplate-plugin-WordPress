@@ -1,7 +1,8 @@
 <?php
-if (!defined('ABSPATH')) {
-	exit;
-}
+  if (!defined('ABSPATH')) {
+      exit;
+  }
+  function tabs_page(){
 ?>
 <div class="wrap">
 <!--<h1>Réglages généraux</h1>-->
@@ -55,3 +56,6 @@ if (!defined('ABSPATH')) {
 </section>
 
 </div>
+<?php
+  }
+?>
