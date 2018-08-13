@@ -43,7 +43,7 @@ function import_style_script() {
   wp_enqueue_style('wp-color-picker');
   wp_enqueue_script(
     'wp-color-picker-alpha',
-    plugins_url('assets/js/wp-color-picker-alpha.js', dirname(__FILE__)), array( 'wp-color-picker' ), '1.2.2', $in_footer
+    plugins_url('assets/js/library/wp-color-picker-alpha.js', dirname(__FILE__)), array( 'wp-color-picker' ), '1.2.2', $in_footer
   );
   
   /* Fonction uplaod image WordPress */

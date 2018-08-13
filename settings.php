@@ -20,8 +20,8 @@ function test_plugin_setup_menu(){
   /* Call of first page -subpage */
   add_submenu_page(
     'boilerplate-plugin-wordpress',
-    'My Custom Page', 
-    'My Custom Page', 
+    'Options', 
+    'Options', 
     'manage_options', 
     'boilerplate-plugin-wordpress'
   );
@@ -29,8 +29,8 @@ function test_plugin_setup_menu(){
   /* Call of second page - subpage */
   add_submenu_page( 
     'boilerplate-plugin-wordpress', 
-    'My Custom Page', 
-    'My Custom Page', 
+    'Tabs', 
+    'Tabs', 
     'manage_options', 
     'tabs-bpw', 
     'tabs_page'

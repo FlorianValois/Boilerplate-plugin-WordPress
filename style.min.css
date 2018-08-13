@@ -19,17 +19,17 @@ body #adminmenu #toplevel_page_boilerplate-plugin-wordpress > a.current::after {
 body #adminmenu #toplevel_page_boilerplate-plugin-wordpress.wp-has-current-submenu .wp-submenu {
   background-color: #f8b500;
 }
-body.toplevel_page_boilerplate-plugin-wordpress {
+body.toplevel_page_boilerplate-plugin {
   background: #ffffff;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"] {
+body.toplevel_page_boilerplate-plugin input[type="range"] {
   -webkit-appearance: none;
   margin: 3px 0;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]:focus {
+body.toplevel_page_boilerplate-plugin input[type="range"]:focus {
   outline: none;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-webkit-slider-runnable-track {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 3px;
   cursor: pointer;
@@ -39,7 +39,7 @@ body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-webkit-sli
   border-radius: 6px;
   border: none;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-moz-range-track {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-moz-range-track {
   width: 100%;
   height: 3px;
   cursor: pointer;
@@ -48,7 +48,7 @@ body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-moz-range-
   border-radius: 6px;
   border: none;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-ms-track {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-ms-track {
   width: 100%;
   height: 3px;
   cursor: pointer;
@@ -56,7 +56,7 @@ body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-ms-track {
   border-color: transparent;
   color: transparent;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-webkit-slider-thumb {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-webkit-slider-thumb {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
@@ -68,7 +68,7 @@ body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-webkit-sli
   -webkit-appearance: none;
   margin-top: -3px;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-moz-range-thumb {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-moz-range-thumb {
   box-shadow: none;
   border: none;
   height: 16px;
@@ -77,7 +77,7 @@ body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-moz-range-
   background: #ffcc00;
   cursor: pointer;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-ms-thumb {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-ms-thumb {
   box-shadow: none;
   border: none;
   height: 16px;
@@ -86,54 +86,54 @@ body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-ms-thumb {
   background: #ffcc00;
   cursor: pointer;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-moz-range-progress {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-moz-range-progress {
   background: #ffcc00;
   border-radius: 6px;
   height: 3px;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]:focus::-webkit-slider-runnable-track {
+body.toplevel_page_boilerplate-plugin input[type="range"]:focus::-webkit-slider-runnable-track {
   background: rgba(208, 208, 208, 0.99);
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-ms-fill-lower {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-ms-fill-lower {
   background: rgba(182, 182, 182, 0.99);
   border: 0px solid rgba(1, 1, 1, 0);
   border-radius: 8px;
   box-shadow: none;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]::-ms-fill-upper {
+body.toplevel_page_boilerplate-plugin input[type="range"]::-ms-fill-upper {
   background: rgba(195, 195, 195, 0.99);
   border: 0px solid rgba(1, 1, 1, 0);
   border-radius: 8px;
   box-shadow: none;
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]:focus::-ms-fill-lower {
+body.toplevel_page_boilerplate-plugin input[type="range"]:focus::-ms-fill-lower {
   background: rgba(195, 195, 195, 0.99);
 }
-body.toplevel_page_boilerplate-plugin-wordpress input[type="range"]:focus::-ms-fill-upper {
+body.toplevel_page_boilerplate-plugin input[type="range"]:focus::-ms-fill-upper {
   background: rgba(208, 208, 208, 0.99);
 }
-body.toplevel_page_boilerplate-plugin-wordpress #rangValue {
+body.toplevel_page_boilerplate-plugin #rangValue {
   color: #ffa700;
   font-weight: bold;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap {
+body.boilerplate-plugin_page_tabs-bpw .wrap {
   font-family: "Open Sans", sans-serif;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap * {
+body.boilerplate-plugin_page_tabs-bpw .wrap * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #logo {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #logo {
   width: 100%;
   height: 240px;
   padding: 20px;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #logo span {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #logo span {
   position: relative;
   width: 200px;
   height: 200px;
@@ -152,18 +152,18 @@ body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #logo sp
       -ms-flex-align: center;
           align-items: center;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav {
   position: relative;
   z-index: 2;
   width: 240px;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul {
   margin: 0;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li {
   margin: 0;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a {
   position: relative;
   overflow: hidden;
   display: block;
@@ -177,20 +177,20 @@ body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigat
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a * {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a * {
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a .title {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a .title {
   font-size: 1.1em;
   text-transform: uppercase;
   font-weight: 600;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a .description {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a .description {
   font-weight: 400;
   font-style: italic;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a svg {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a svg {
   position: absolute;
   top: 50%;
   left: 25px;
@@ -199,7 +199,7 @@ body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigat
   color: #cdcdd3;
   font-size: 1.5em;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a:before {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a:before {
   position: absolute;
   display: block;
   content: "";
@@ -211,30 +211,30 @@ body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigat
   -webkit-transition: width ease .3s;
   transition: width ease .3s;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a:hover {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a:hover {
   background: #ffffff;
   border-right-color: transparent;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a:hover * {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a:hover * {
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a:hover .title {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a:hover .title {
   color: #34333B;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a:hover .description {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a:hover .description {
   color: #9896a4;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a:hover svg {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a:hover svg {
   color: #34333B;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li a:focus {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li a:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-tabs-active a, body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-state-active a {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-tabs-active a, body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-state-active a {
   z-index: 1;
   margin-left: 0;
   background: #ffffff;
@@ -242,22 +242,22 @@ body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigat
   -webkit-box-shadow: -6px 0px 6px #dbdadf;
           box-shadow: -6px 0px 6px #dbdadf;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-tabs-active a .title, body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-state-active a .title {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-tabs-active a .title, body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-state-active a .title {
   color: #ffc62c;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-tabs-active a .description, body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-state-active a .description {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-tabs-active a .description, body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-state-active a .description {
   color: #9896a4;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-tabs-active a svg, body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-state-active a svg {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-tabs-active a svg, body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-state-active a svg {
   color: #ffc62c;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-tabs-active a:before, body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li.ui-state-active a:before {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-tabs-active a:before, body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.ui-state-active a:before {
   opacity: 0;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #navigation nav ul li:first-child a {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li:first-child a {
   border-top: 1px solid #e8e8eb;
 }
-body.boilerplate-plugin_page_boilerplate-plugin-wordpress-2 .wrap #tabs #content {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #content {
   position: relative;
   z-index: 1;
   background: #ffffff;

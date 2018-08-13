@@ -1,0 +1,3 @@
+- Créer fonction d'activation du plugin
+- Créer fonction de désactivation du plugin
+- Créer fonction de suppression du plugin

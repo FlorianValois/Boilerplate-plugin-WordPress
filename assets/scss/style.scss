@@ -1,0 +1,36 @@
+$pluginName: 'boilerplate-plugin-wordpress';
+
+body {
+  /* Paramétrage Sweet Alert 2 */
+  &.swal2-height-auto {
+    height: 100% !important;
+  }
+  /* Lien plugin dans la barre de navigation */
+  #adminmenu {
+    #toplevel_page_#{$pluginName} {
+      > a {
+        color: darken(#ffc62c, 35%);
+        &.menu-top {
+          background: #ffc62c;
+        }
+        &.current {
+          &::after {
+            border-right-color: #ffffff !important;
+          }
+        }
+      }
+      &.wp-has-current-submenu {
+        .wp-submenu {
+          background-color: darken(#ffc62c, 10%);
+        }
+      }
+    }
+    .wp-menu-image {
+      img {}
+    }
+  }
+  
+  @import 'pages/options';
+  @import 'pages/tabs';
+
+}

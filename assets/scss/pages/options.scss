@@ -1,0 +1,8 @@
+$pluginName: 'boilerplate-plugin';
+$pageName: 'options-bpw';
+
+/* Page du plugin */
+&.toplevel_page_#{$pluginName} {
+  background: #ffffff;
+  @import '../input/range-style-1';
+}
