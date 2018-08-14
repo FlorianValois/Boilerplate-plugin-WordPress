@@ -43,7 +43,7 @@ function styles_page(){
       <div class="input-checkbox-003">
         <input type="checkbox" id="input-checkbox-003">
         <label for="input-checkbox-003">
-          <span data-active="On"></span>
+          <span></span>
         </label>
       </div>
       <h3>Style 003</h3>
