@@ -10,7 +10,7 @@
 <section id="tabs">
   <aside id="navigation">
     <div id="logo">
-      <span>Logo</span>
+      <span>Logo<br><em>200*200</em></span>
     </div>
     <nav>
       <ul>

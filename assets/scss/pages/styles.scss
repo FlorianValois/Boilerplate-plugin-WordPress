@@ -1,0 +1,45 @@
+$pluginName: 'boilerplate-plugin';
+$pageName: 'styles-bpw';
+
+&.#{$pluginName}_page_#{$pageName} {
+  .wrap {
+    font-family: "Open Sans", sans-serif;
+    * {
+      box-sizing: border-box;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      &.list-style {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        li {
+          background: #ffffff;
+          border: 1px solid lighten(#34333B, 70%);
+          width: 150px;
+          height: 150px;
+          margin: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > span {
+            > div {
+              margin: 0 auto;
+            }
+            > h3 {
+              font-size: 13px;
+              font-weight: 500;
+              font-style: italic;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    /* === INPUT === */
+    /* Checkbox */
+    @import '../input/checkbox/001';
+    @import '../input/checkbox/002';
+  }
+}

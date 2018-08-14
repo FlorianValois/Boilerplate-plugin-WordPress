@@ -36,3 +36,4 @@ require_once BPW_PLUGIN_DIR . '/includes/update-data.inc.php';
 /* Pages */
 require_once BPW_PLUGIN_DIR . '/pages/options.php';
 require_once BPW_PLUGIN_DIR . '/pages/tabs.php';
+require_once BPW_PLUGIN_DIR . '/pages/styles.php';

@@ -31,7 +31,7 @@ function options_page(){
   
   Input (Range) :<br>
   <div class="range">
-    <input type="range" name="range_1" id="range" value="<?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?>" min="0" max="100">
+    <input type="range" name="range_1" id="range" class="input-range-001" value="<?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?>" min="0" max="100">
     <span><?php if(isset($data['range_1'])){echo $data['range_1'];}else{echo '0';} ?></span>
   </div>
   
@@ -43,7 +43,7 @@ function options_page(){
   <br><br>
   
   Input (Checkbox) :<br>
-  <input id="checkbox_1" type="checkbox" name="checkbox_1" value="checkbox_1_value" <?php (isset($data['checkbox_1']) ? 'checked' : ''); ?>>
+  <input type="checkbox" name="checkbox_1" id="checkbox_1" value="checkbox_1_value" <?php (isset($data['checkbox_1']) ? 'checked' : ''); ?>>
   <label for="checkbox_1">Checkbox 1</label>
   
   <br><br>

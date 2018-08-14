@@ -17,7 +17,7 @@ function test_plugin_setup_menu(){
     99 
   );
   
-  /* Call of first page -subpage */
+  /* Call of "Options" page -subpage */
   add_submenu_page(
     'boilerplate-plugin-wordpress',
     'Options', 
@@ -26,7 +26,7 @@ function test_plugin_setup_menu(){
     'boilerplate-plugin-wordpress'
   );
   
-  /* Call of second page - subpage */
+  /* Call of "Tabs" page - subpage */
   add_submenu_page( 
     'boilerplate-plugin-wordpress', 
     'Tabs', 
@@ -34,6 +34,15 @@ function test_plugin_setup_menu(){
     'manage_options', 
     'tabs-bpw', 
     'tabs_page'
+  );
+  /* Call of "Styles" page - subpage */
+  add_submenu_page( 
+    'boilerplate-plugin-wordpress', 
+    'Style', 
+    'Style', 
+    'manage_options', 
+    'styles-bpw', 
+    'styles_page'
   );
   
 }
