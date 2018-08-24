@@ -1,20 +1,19 @@
 $pluginName: 'boilerplate-plugin';
 $pageName: 'styles-bpw';
-
 &.#{$pluginName}_page_#{$pageName} {
   .wrap {
     font-family: "Open Sans", sans-serif;
     * {
       box-sizing: border-box;
     }
-    ul {
+    > ul {
       margin: 0;
       padding: 0;
       &.list-style {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        li {
+        > li {
           background: #ffffff;
           border: 1px solid lighten(#34333B, 70%);
           width: 150px;
@@ -38,10 +37,11 @@ $pageName: 'styles-bpw';
       }
     }
     /* === INPUT === */
-    
     /* Checkbox */
     @import '../input/checkbox/001';
     @import '../input/checkbox/002';
     @import '../input/checkbox/003';
+    /* Radio */
+    @import '../input/radio/001';
   }
 }

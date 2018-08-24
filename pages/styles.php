@@ -51,6 +51,30 @@ function styles_page(){
   </li>
 </ul>
 
+<h2>Input (Radio)</h2>
+
+<ul class="list-style">
+  <li>
+    <span>
+      <ul class="input-radio-001">
+       <li>
+        <input type="radio" id="item-1" name="input-radio-001">
+        <label for="item-1">Item 1</label>
+       </li>
+       <li>
+        <input type="radio" id="item-2" name="input-radio-001">
+        <label for="item-2">Item 2</label>
+       </li>
+       <li>
+        <input type="radio" id="item-3" name="input-radio-001">
+				<label for="item-3">Item 3</label>
+       </li>
+      </ul>
+      <h3>Style 001</h3>
+    </span>
+  </li>
+</ul>
+
 
 
 

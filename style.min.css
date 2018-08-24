@@ -267,16 +267,17 @@ body.boilerplate-plugin_page_styles-bpw .wrap {
   font-family: "Open Sans", sans-serif;
   /* === INPUT === */
   /* Checkbox */
+  /* Radio */
 }
 body.boilerplate-plugin_page_styles-bpw .wrap * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-body.boilerplate-plugin_page_styles-bpw .wrap ul {
+body.boilerplate-plugin_page_styles-bpw .wrap > ul {
   margin: 0;
   padding: 0;
 }
-body.boilerplate-plugin_page_styles-bpw .wrap ul.list-style {
+body.boilerplate-plugin_page_styles-bpw .wrap > ul.list-style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +287,7 @@ body.boilerplate-plugin_page_styles-bpw .wrap ul.list-style {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-body.boilerplate-plugin_page_styles-bpw .wrap ul.list-style li {
+body.boilerplate-plugin_page_styles-bpw .wrap > ul.list-style > li {
   background: #ffffff;
   border: 1px solid #e8e8eb;
   width: 150px;
@@ -302,10 +303,10 @@ body.boilerplate-plugin_page_styles-bpw .wrap ul.list-style li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body.boilerplate-plugin_page_styles-bpw .wrap ul.list-style li > span > div {
+body.boilerplate-plugin_page_styles-bpw .wrap > ul.list-style > li > span > div {
   margin: 0 auto;
 }
-body.boilerplate-plugin_page_styles-bpw .wrap ul.list-style li > span > h3 {
+body.boilerplate-plugin_page_styles-bpw .wrap > ul.list-style > li > span > h3 {
   font-size: 13px;
   font-weight: 500;
   font-style: italic;
@@ -501,6 +502,54 @@ body.boilerplate-plugin_page_styles-bpw .wrap .input-checkbox-003 label:after {
   width: 16px;
   height: 16px;
   background: #ffffff;
+  border-radius: 50%;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+body.boilerplate-plugin_page_styles-bpw .wrap .input-radio-001 {
+  position: relative;
+  display: inline-block;
+}
+body.boilerplate-plugin_page_styles-bpw .wrap .input-radio-001 li {
+  margin-bottom: 5px;
+}
+body.boilerplate-plugin_page_styles-bpw .wrap .input-radio-001 li input[type="radio"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+body.boilerplate-plugin_page_styles-bpw .wrap .input-radio-001 li input[type="radio"]:checked + label:before {
+  border-color: #f8b500;
+}
+body.boilerplate-plugin_page_styles-bpw .wrap .input-radio-001 li input[type="radio"]:checked + label:after {
+  background: #f8b500;
+}
+body.boilerplate-plugin_page_styles-bpw .wrap .input-radio-001 li label {
+  position: relative;
+  display: block;
+}
+body.boilerplate-plugin_page_styles-bpw .wrap .input-radio-001 li label:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(136, 136, 136, 0.5);
+  border-radius: 16px;
+  cursor: pointer;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+body.boilerplate-plugin_page_styles-bpw .wrap .input-radio-001 li label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  background: transparent;
   border-radius: 50%;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
