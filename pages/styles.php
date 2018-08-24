@@ -77,7 +77,6 @@ function styles_page(){
 
 
 
-
 </div>
 <?php
 }
