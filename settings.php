@@ -44,6 +44,15 @@ function test_plugin_setup_menu(){
     'styles-bpw', 
     'styles_page'
   );
+  /* Call of "Scroll to top" page - subpage */
+  add_submenu_page( 
+    'boilerplate-plugin-wordpress', 
+    'Scroll to top', 
+    'Scroll to top', 
+    'manage_options', 
+    'scroll-to-top-bpw', 
+    'scroll_to_top_page'
+  );
   
 }
 

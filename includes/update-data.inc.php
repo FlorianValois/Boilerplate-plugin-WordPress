@@ -25,14 +25,14 @@ function ajax_form_update_options(){
     ));
     
     // Génération du fichier CSS des options
-    ob_start();
-      $data = get_option('boilerplate_plugin');
-      include(BPW_PLUGIN_DIR.'/assets/style.php');
-      $content = ob_get_contents();
-    ob_end_clean();
-    $f = fopen(BPW_PLUGIN_DIR.'/assets/style-php.css', 'w');
-    fwrite($f, $content);
-    fclose($f);
+//    ob_start();
+//      $data = get_option($option_name);
+//      include(BPW_PLUGIN_DIR.'/assets/style.php');
+//      $content = ob_get_contents();
+//    ob_end_clean();
+//    $f = fopen(BPW_PLUGIN_DIR.'/assets/style-php.css', 'w');
+//    fwrite($f, $content);
+//    fclose($f);
     
   }
   else{
