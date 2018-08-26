@@ -2,9 +2,10 @@
   if (!defined('ABSPATH')) {
       exit;
   }
-  $data = get_option('boilerplate_plugin');
 
 function options_page(){
+  
+  $data = get_option('boilerplate_plugin');
 
 ?>
 

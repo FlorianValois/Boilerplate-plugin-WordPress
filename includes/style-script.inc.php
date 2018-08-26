@@ -4,8 +4,8 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 
-add_action( 'admin_init', 'import_style_script' );
-function import_style_script() {
+add_action( 'admin_init', 'admin_import_style_script' );
+function admin_import_style_script() {
   
   /* Google Font */
   wp_enqueue_style(
@@ -27,16 +27,6 @@ function import_style_script() {
   wp_enqueue_style( 
     'sweetalert2-css', 
     plugins_url('bower_components/sweetalert2/dist/sweetalert2.min.css', dirname(__FILE__)) 
-  );
-  
-  /* FontAwesome */
-  wp_enqueue_style(
-    'fontawesome-css',
-    plugins_url('/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css', dirname(__FILE__))
-  );
-  wp_enqueue_script(
-    'fontawesome-script',
-    plugins_url('bower_components/font-awesome/svg-with-js/js/fontawesome-all.js', dirname(__FILE__)), false, '', true
   );
   
   /* Color Picker WordPress*/
@@ -69,4 +59,24 @@ function import_style_script() {
   );
 }
 
+
+add_action( 'init', 'import_style_script' );
+function import_style_script() {
+
+  /* FontAwesome */
+  wp_enqueue_style(
+    'fontawesome',
+    plugins_url('/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css', dirname(__FILE__))
+  );
+  wp_enqueue_script(
+    'fontawesome',
+    plugins_url('bower_components/font-awesome/svg-with-js/js/fontawesome-all.js', dirname(__FILE__)), false, '', true
+  );
+  
+  wp_enqueue_style( 
+    'style-php', 
+    plugins_url('assets/style-php.css', dirname(__FILE__))
+  );
+  
+}
 ?>

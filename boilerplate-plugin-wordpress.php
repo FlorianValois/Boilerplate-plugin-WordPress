@@ -37,3 +37,25 @@ require_once BPW_PLUGIN_DIR . '/includes/update-data.inc.php';
 require_once BPW_PLUGIN_DIR . '/pages/options.php';
 require_once BPW_PLUGIN_DIR . '/pages/tabs.php';
 require_once BPW_PLUGIN_DIR . '/pages/styles.php';
+
+
+
+add_action('wp_footer', 'your_function_name');
+function your_function_name(){
+?>
+<div id="scrollTop" style="font-family: Font Awesome 5 Free;"><i class="fas fa-caret-up"></i></div>
+<?php
+};
+
+
+add_action( 'init', 'run_this_code');
+function run_this_code() {
+  ob_start();
+  $data = get_option('boilerplate_plugin');
+  include(BPW_PLUGIN_DIR.'/assets/style.php');
+  $content = ob_get_contents();
+  ob_end_clean();
+  $f = fopen(BPW_PLUGIN_DIR.'/assets/style-php.css', 'w');
+  fwrite($f, $content);
+  fclose($f);
+}
