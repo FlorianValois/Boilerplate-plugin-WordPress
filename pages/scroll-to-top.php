@@ -32,22 +32,27 @@ function scroll_to_top_page(){
   
   <br><br>
   
+  Ecart Right/Left:<br>
   <input type="number" name="stt_nmb_lr" value="<?php echo $data['stt_nmb_lr']; ?>">
   
   <br><br>
   
+  Ecart Bottom :<br>
   <input type="number" name="stt_nmb_b" value="<?php echo $data['stt_nmb_b']; ?>">
   
   <br><br>
   
+  Largeur :<br>
   <input type="number" name="stt_nmb_width" value="<?php echo $data['stt_nmb_width']; ?>">
   
   <br><br>
   
+  Hauteur : <br>
   <input type="number" name="stt_nmb_height" value="<?php echo $data['stt_nmb_height']; ?>">
   
   <br><br>
   
+  Background :<br>
   <input type="text" name="stt_color_background" class="color-picker" data-alpha="true" value="<?php echo $data['stt_color_background']; ?>">
   
   <br><br>
