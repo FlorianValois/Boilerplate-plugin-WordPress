@@ -41,7 +41,7 @@ jQuery(document).ready(function ($) {
       type: "POST",
       data: postData,
       dataType: "json",
-      url: youruniquejs_vars.ajaxurl,
+      url: bpw_ajax.ajaxurl,
       success: function (postData) {
         console.log(postData.update);
         if (postData.update) {

@@ -46,7 +46,7 @@ function admin_import_style_script() {
   );
   wp_localize_script(
     'ajax-script',
-    'youruniquejs_vars', 
+    'bpw_ajax', 
       array(
           'ajaxurl' => admin_url( 'admin-ajax.php' ),
       ) 

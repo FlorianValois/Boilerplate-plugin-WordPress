@@ -19,21 +19,32 @@ function scroll_to_top_page(){
 
   Activé :<br>
   
-  
   <div class="input-checkbox-003">
-    <input type="checkbox" name="stt_active" id="stt_active" value="active" <?php (isset($data['stt_active']) ? 'checked' : ''); ?>>
+    <input type="checkbox" name="stt_active" id="stt_active" value="stt_active_value" <?php if(isset($data['stt_active'])){echo 'checked="checked"';} ?>>
     <label for="stt_active"><span></span></label>
   </div>
       
   <br><br>      
   
   Positionnement :<br>
-  <input type="radio" name="stt_position" value="left" <?php (isset($data['stt_position']) === 'left' ? 'checked="checked"' : '');?>> Left<br>
-  <input type="radio" name="stt_position" value="right" <?php (isset($data['stt_position']) === 'right' ? 'checked="checked"' : '');?>> Right
+  <input type="radio" name="stt_position" value="left" <?php if($data['stt_position'] === 'left' ){echo 'checked';}?>> Left<br>
+  <input type="radio" name="stt_position" value="right" <?php if($data['stt_position'] === 'right' ) {echo 'checked';}?>> Right
   
   <br><br>
   
-  <input type="number" name="stt_number_lr" value="<?php echo $data['stt_number_lr']; ?>">
+  <input type="number" name="stt_nmb_lr" value="<?php echo $data['stt_nmb_lr']; ?>">
+  
+  <br><br>
+  
+  <input type="number" name="stt_nmb_b" value="<?php echo $data['stt_nmb_b']; ?>">
+  
+  <br><br>
+  
+  <input type="number" name="stt_nmb_width" value="<?php echo $data['stt_nmb_width']; ?>">
+  
+  <br><br>
+  
+  <input type="number" name="stt_nmb_height" value="<?php echo $data['stt_nmb_height']; ?>">
   
   <br><br>
   
