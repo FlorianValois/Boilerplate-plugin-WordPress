@@ -21,15 +21,23 @@ function scroll_to_top_page(){
   
   
   <div class="input-checkbox-003">
-    <input type="checkbox" name="stt_active" id="stt_active" value="stt_active_value" <?php (isset($data['stt_active']) ? 'checked' : ''); ?>>
+    <input type="checkbox" name="stt_active" id="stt_active" value="active" <?php (isset($data['stt_active']) ? 'checked' : ''); ?>>
     <label for="stt_active"><span></span></label>
   </div>
       
   <br><br>      
   
   Positionnement :<br>
-  <input type="radio" name="stt_position" value="left" <?php (isset($data['gender']) === 'left' ? 'checked="checked"' : '');?>> Left<br>
-  <input type="radio" name="stt_position" value="right" <?php (isset($data['gender']) === 'right' ? 'checked="checked"' : '');?>> Right
+  <input type="radio" name="stt_position" value="left" <?php (isset($data['stt_position']) === 'left' ? 'checked="checked"' : '');?>> Left<br>
+  <input type="radio" name="stt_position" value="right" <?php (isset($data['stt_position']) === 'right' ? 'checked="checked"' : '');?>> Right
+  
+  <br><br>
+  
+  <input type="number" name="stt_number_lr" value="<?php echo $data['stt_number_lr']; ?>">
+  
+  <br><br>
+  
+  <input type="text" name="stt_color_background" class="color-picker" data-alpha="true" value="<?php echo $data['stt_color_background']; ?>">
   
   <br><br>
   
