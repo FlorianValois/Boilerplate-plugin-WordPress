@@ -44,7 +44,7 @@ require_once BPW_PLUGIN_DIR . '/pages/scroll-to-top.php';
 add_action('wp_footer', 'your_function_name');
 function your_function_name(){
 ?>
-<div id="scrollTop" style="font-family: Font Awesome 5 Free;"><i class="fas fa-caret-up"></i></div>
+<button type="button" id="scrollTop"></button>
 <?php
 };
 
