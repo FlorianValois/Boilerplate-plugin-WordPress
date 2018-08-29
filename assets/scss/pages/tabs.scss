@@ -1,6 +1,5 @@
 $pluginName: 'boilerplate-plugin';
 $pageName: 'tabs-bpw';
-
 &.#{$pluginName}_page_#{$pageName} {
   .wrap {
     font-family: "Open Sans", sans-serif;
@@ -76,14 +75,13 @@ $pageName: 'tabs-bpw';
                   content: "";
                   top: 0;
                   left: 0;
-                  width: 1px;
+                  width: 3px;
                   height: 100%;
                   background: lighten(#34333B, 70%);
                   transition: width ease .3s;
                 }
                 &:hover {
                   background: #ffffff;
-                  border-right-color: transparent;
                   transition: all ease .3s;
                   * {
                     transition: all ease .3s;
@@ -97,6 +95,10 @@ $pageName: 'tabs-bpw';
                   svg {
                     color: #34333B;
                   }
+                  &:before {
+                    background: #34333B;
+                    transition: all ease .3s;
+                  }
                 }
                 &:focus {
                   box-shadow: none;
@@ -108,8 +110,9 @@ $pageName: 'tabs-bpw';
                   z-index: 1;
                   margin-left: 0;
                   background: #ffffff;
+//                  border-left: 3px solid #ffc62c;
                   border-right-color: transparent;
-                  box-shadow: -6px 0px 6px lighten(#34333B, 65%);
+//                  box-shadow: -4px 0px 4px lighten(#34333B, 65%);
                   .title {
                     color: #ffc62c;
                   }
@@ -120,13 +123,27 @@ $pageName: 'tabs-bpw';
                     color: #ffc62c;
                   }
                   &:before {
-                    opacity: 0;
+                    background: #ffc62c;
                   }
                 }
               }
               &:first-child {
                 a {
                   border-top: 1px solid lighten(#34333B, 70%);
+                }
+              }
+              &.comingsoon {
+                position: relative;
+                overflow: hidden;
+                display: block;
+                background: lighten(#34333B, 70%);
+                padding: 24px 17px 24px 50px;
+                border-bottom: 1px solid lighten(#34333B, 70%);
+                border-right: 1px solid lighten(#34333B, 70%);
+                border-left: 1px solid lighten(#34333B, 70%);
+                color: lighten(#34333B, 50%);
+                span {
+                  font-style: italic;
                 }
               }
             }
@@ -138,9 +155,26 @@ $pageName: 'tabs-bpw';
         z-index: 1;
         background: #ffffff;
         width: calc(100% - 240px + 1px);
-        padding: 20px;
+        padding: 30px;
         border: 1px solid lighten(#34333B, 70%);
         margin-left: -1px;
+        .title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding-bottom: 30px;
+          border-bottom: 1px solid lighten(#34333B, 70%);
+          margin-bottom: 30px;
+          svg{
+            font-size: 30px;
+            color: #ffc62c;
+          }
+          h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0 0 0 30px;
+          }
+        }
       }
     }
   }

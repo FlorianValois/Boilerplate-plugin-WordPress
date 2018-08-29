@@ -77,6 +77,10 @@ function import_style_script() {
     'style-php', 
     plugins_url('assets/style-php.css', dirname(__FILE__))
   );
+  wp_enqueue_script(
+    'bpw-script', 
+    plugins_url('assets/bpw.js', dirname(__FILE__)), false, '', true
+  );
   
 }
 ?>

@@ -69,6 +69,8 @@ function scroll_to_top_page(){
   Couleur icône:<br>
   <input type="text" name="stt_color_icone" class="color-picker" data-alpha="true" value="<?php echo $data['stt_color_icone']; ?>">
   
+  <br><br>
+  
   <button id="submit" type="submit" class="button button-primary">Enregistrer</button>
 </form>
 
