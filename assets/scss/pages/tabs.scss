@@ -110,9 +110,9 @@ $pageName: 'tabs-bpw';
                   z-index: 1;
                   margin-left: 0;
                   background: #ffffff;
-//                  border-left: 3px solid #ffc62c;
+                  //                  border-left: 3px solid #ffc62c;
                   border-right-color: transparent;
-//                  box-shadow: -4px 0px 4px lighten(#34333B, 65%);
+                  //                  box-shadow: -4px 0px 4px lighten(#34333B, 65%);
                   .title {
                     color: #ffc62c;
                   }
@@ -150,7 +150,7 @@ $pageName: 'tabs-bpw';
           }
         }
       }
-      #content {
+      > #content {
         position: relative;
         z-index: 1;
         background: #ffffff;
@@ -158,21 +158,72 @@ $pageName: 'tabs-bpw';
         padding: 30px;
         border: 1px solid lighten(#34333B, 70%);
         margin-left: -1px;
-        .title {
+        .title-tabs {
           display: flex;
           justify-content: flex-start;
           align-items: center;
           padding-bottom: 30px;
           border-bottom: 1px solid lighten(#34333B, 70%);
           margin-bottom: 30px;
-          svg{
+          svg {
             font-size: 30px;
             color: #ffc62c;
           }
           h2 {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 600;
             margin: 0 0 0 30px;
+          }
+        }
+        h3 {
+          font-size: 20px;
+          background: lighten(#34333B, 75%);
+          padding: 15px;
+        }
+        table {
+          margin-bottom: 30px;
+          tr {
+            td {
+              padding: 30px 0;
+              border-bottom: 1px solid lighten(#34333B, 70%);
+              &.title-row {
+                min-width: 400px;
+                h4 {
+                  margin: 0;
+                  font-size: 15px;
+                }
+                p {
+                  padding: 0;
+                  margin: 0;
+                  font-size: 15px;
+                }
+              }
+              &.content-row {
+                width: 100%;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        button {
+          &.update-btn {
+            display: block;
+            background: #56a0c7;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all ease .3s;
+            svg{
+              margin-left: 10px;
+            }
+            &:hover {
+              background: darken(#56a0c7, 15%);
+              transition: all ease .3s;
+            }
           }
         }
       }

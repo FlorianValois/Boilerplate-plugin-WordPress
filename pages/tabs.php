@@ -36,11 +36,32 @@
   </aside>
   <div id="content">
     <div id="tabs-1">
-      <div class="title">
+      <div class="title-tabs">
         <i class="fas fa-cog"></i>
         <h2>Lorem ipsum</h2>
       </div>
-      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+      <h3>Lorem ipsum</h3>
+      <form method="post" action="">
+        <table cellspacing="0" cellpadding="0">
+          <?php
+          $i = 0;
+          while($i++ < 5){
+          ?>
+          <tr>
+            <td class="title-row" valign="top">
+              <h4>Lorem ipsum</h4>
+              <p>sous titre</p>
+            </td>
+            <td class="content-row" valign="top">
+              kdhkjdhfld
+            </td>
+          </tr>
+          <?php
+          }
+          ?>
+        </table>
+        <button type="submit" class="update-btn">Sauvegarder les modifications <i class="fas fa-save"></i></button>
+      </form>
     </div>
     <div id="tabs-2">
       <h2>Content heading 2</h2>

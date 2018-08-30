@@ -270,7 +270,7 @@ body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.comingso
 body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #navigation nav ul li.comingsoon span {
   font-style: italic;
 }
-body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #content {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content {
   position: relative;
   z-index: 1;
   background: #ffffff;
@@ -279,7 +279,7 @@ body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #content {
   border: 1px solid #e8e8eb;
   margin-left: -1px;
 }
-body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #content .title {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content .title-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,14 +293,63 @@ body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #content .title {
   border-bottom: 1px solid #e8e8eb;
   margin-bottom: 30px;
 }
-body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #content .title svg {
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content .title-tabs svg {
   font-size: 30px;
   color: #ffc62c;
 }
-body.boilerplate-plugin_page_tabs-bpw .wrap #tabs #content .title h2 {
-  font-size: 24px;
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content .title-tabs h2 {
+  font-size: 26px;
   font-weight: 600;
   margin: 0 0 0 30px;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content h3 {
+  font-size: 20px;
+  background: #f6f6f7;
+  padding: 15px;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content table {
+  margin-bottom: 30px;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content table tr td {
+  padding: 30px 0;
+  border-bottom: 1px solid #e8e8eb;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content table tr td.title-row {
+  min-width: 400px;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content table tr td.title-row h4 {
+  margin: 0;
+  font-size: 15px;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content table tr td.title-row p {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content table tr td.content-row {
+  width: 100%;
+  font-size: 15px;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content button.update-btn {
+  display: block;
+  background: #56a0c7;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content button.update-btn svg {
+  margin-left: 10px;
+}
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content button.update-btn:hover {
+  background: #34789d;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 body.boilerplate-plugin_page_styles-bpw .wrap {
   font-family: "Open Sans", sans-serif;
