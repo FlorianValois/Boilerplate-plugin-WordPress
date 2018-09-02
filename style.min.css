@@ -330,6 +330,9 @@ body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content table tr td.content
   width: 100%;
   font-size: 15px;
 }
+body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content table tr:last-child td {
+  border-bottom: none;
+}
 body.boilerplate-plugin_page_tabs-bpw .wrap #tabs > #content button.update-btn {
   display: block;
   background: #56a0c7;

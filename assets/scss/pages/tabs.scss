@@ -203,6 +203,11 @@ $pageName: 'tabs-bpw';
                 font-size: 15px;
               }
             }
+            &:last-child {
+              td {
+                border-bottom: none;
+              }
+            }
           }
         }
         button {
@@ -217,7 +222,7 @@ $pageName: 'tabs-bpw';
             cursor: pointer;
             text-transform: uppercase;
             transition: all ease .3s;
-            svg{
+            svg {
               margin-left: 10px;
             }
             &:hover {

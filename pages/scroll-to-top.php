@@ -62,7 +62,7 @@ function scroll_to_top_page(){
   <br><br>
   
   Icône:<br>
-  <input type="text" name="stt_icone" value="\<?php echo $data['stt_icone']; ?>">
+  <input type="text" name="stt_icone" value="<?php echo $data['stt_icone']; ?>">
   
   <br><br>
   
